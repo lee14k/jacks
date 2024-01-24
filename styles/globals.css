@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.headercontainer {
+  background-image:url("/cinnamon.jpeg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  
+}
