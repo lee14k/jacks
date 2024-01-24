@@ -10,7 +10,7 @@ const InstaGrid = () => {
       try {
         const fields = 'id,media_type,media_url,caption';
         // Replace 'USER_ID' with the actual user ID
-        const url = `https://graph.instagram.com/4302296525/media?fields=${fields}&access_token=${accessToken}`;
+        const url = `https://graph.instagram.com/me/media?fields=${fields}&access_token=${accessToken}`;
         const response = await fetch(url);
         const data = await response.json();
 
