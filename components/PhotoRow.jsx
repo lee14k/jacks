@@ -1,8 +1,8 @@
 import Image from "next/image"
 const PhotoRow =()=>{
     return (
-<div className="headerbg flex flex-col justify-center items-center">
-    <div className="grid grid-cols-3">
+<div className="headerbg flex flex-col justify-center items-center gap-2">
+    <div className="grid grid-cols-3 gap-2">
         <div>
             <Image
             src="/food1.jpeg"
