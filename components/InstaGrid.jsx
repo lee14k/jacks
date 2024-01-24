@@ -1,26 +1,34 @@
 import React, { useState, useEffect } from 'react';
 
-const InstaGrid = ({ userId }) => {
+const InstaGrid = () => {
   const [media, setMedia] = useState([]);
-  const mediaId = '1491227324780855'
-  let accessToken= process.env.TOKEN
+  // Access the access token from environment variables for security
+  const accessToken = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
+
   useEffect(() => {
     const fetchMedia = async () => {
       try {
         const fields = 'id,media_type,media_url,caption';
-        const url = `https://graph.instagram.com/${mediaId}/media?fields=${fields}&access_token=${accessToken}`;
+        // Replace 'USER_ID' with the actual user ID
+        const url = `https://graph.instagram.com/4302296525/media?fields=${fields}&access_token=${accessToken}`;
         const response = await fetch(url);
         const data = await response.json();
-        setMedia(data.data); // Assuming the data is in the 'data' field
+
+        if (data.error) {
+          console.error('API Error:', data.error);
+          return;
+        }
+
+        setMedia(data.data);
       } catch (error) {
         console.error('Error fetching Instagram media:', error);
       }
     };
 
     fetchMedia();
-  }, [userId, accessToken]);
+  }, [accessToken]); // Dependency on accessToken to refetch if it changes
 
-  if (media.length === 0) {
+  if (!media || media.length === 0) {
     return <div>Loading...</div>;
   }
 
@@ -28,7 +36,7 @@ const InstaGrid = ({ userId }) => {
     <div>
       {media.map(item => (
         <div key={item.id}>
-          <img src={item.media_url} alt={item.caption} />
+          <img src={item.media_url} alt={item.caption || 'Instagram post'} />
           <p>{item.caption}</p>
         </div>
       ))}
@@ -36,4 +44,4 @@ const InstaGrid = ({ userId }) => {
   );
 };
 
-export default InstaGrid
+export default InstaGrid;
