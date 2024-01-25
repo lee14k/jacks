@@ -1,9 +1,9 @@
 import Image from "next/image"
 const PhotoRow =()=>{
     return (
-<div className="headerbg flex flex-col justify-center items-center gap-2">
+<div className="headerbg flex flex-col justify-center items-center gap-2 py-24">
     <div className="grid grid-cols-3 gap-2">
-        <div>
+        <div className="text-xl">
             <Image
             src="/food1.jpeg"
             height={200}
@@ -12,7 +12,7 @@ const PhotoRow =()=>{
             />
             Hand Smoked BBQ
             </div>
-        <div>
+        <div className="text-xl">
         <Image
             src="/food1.jpeg"
             height={200}
@@ -20,7 +20,7 @@ const PhotoRow =()=>{
             className="rounded"
             />
             All Day Breakfast</div>
-        <div>
+        <div className="text-xl">
         <Image
             src="/food1.jpeg"
             height={200}
