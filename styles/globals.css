@@ -17,8 +17,8 @@
 
 .menu-container {
   position: fixed;
-  bottom: 200px;
-  right: 90px;
+  bottom: 120px;
+  right: 80px;
   z-index: 1000;
   transform: rotate(10deg) translate(-20px, -20px);
 
@@ -36,11 +36,11 @@
 
 /* Adjust rotation and translation for larger size */
 .menu-stack:nth-child(1) {
-  top:50px;
-  transform: rotate(10deg) translate(-30px, -30px);
+  top:20px;
+  transform: rotate(-20deg) translate(-50px, -30px);
 }
 .menu-stack:nth-child(2) {
-  transform: rotate(10deg) translate(-15px, -15px);
+  transform: rotate(-30deg) translate(-15px, -15px);
 }
 .menu-stack:nth-child(3) {
   transform: rotate(0deg);

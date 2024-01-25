@@ -5,7 +5,6 @@ const StackedMenu = () => {
         <div className="menu-container">
             <div className="menu-stack menu-one"></div>
             <div className="menu-stack"></div>
-            <div className="menu-stack"></div>
 
         </div>
     );
