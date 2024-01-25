@@ -1,47 +1,42 @@
 import React, { useState, useEffect } from 'react';
 
 const InstaGrid = () => {
-  const [media, setMedia] = useState([]);
-  // Access the access token from environment variables for security
-  const accessToken = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
+    const [media, setMedia] = useState([]);
 
-  useEffect(() => {
-    const fetchMedia = async () => {
-      try {
-        const fields = 'id,media_type,media_url,caption';
-        // Replace 'USER_ID' with the actual user ID
-        const url = `https://graph.instagram.com/me/media?fields=${fields}&access_token=${accessToken}`;
-        const response = await fetch(url);
-        const data = await response.json();
+    useEffect(() => {
+        const fetchMedia = async () => {
+            try {
+                const response = await fetch('/api/images'); // Call to your Next.js API route
+                const data = await response.json();
 
-        if (data.error) {
-          console.error('API Error:', data.error);
-          return;
-        }
+                if (!response.ok) {
+                    console.error('API Error:', data.error);
+                    return;
+                }
 
-        setMedia(data.data);
-      } catch (error) {
-        console.error('Error fetching Instagram media:', error);
-      }
-    };
+                setMedia(data);
+            } catch (error) {
+                console.error('Error fetching Instagram media:', error);
+            }
+        };
 
-    fetchMedia();
-  }, [accessToken]); // Dependency on accessToken to refetch if it changes
+        fetchMedia(); // Call the function to fetch media
+    }, []); // Empty dependency array to run once on component mount
 
-  if (!media || media.length === 0) {
-    return <div>Loading...</div>;
-  }
+    if (!media || media.length === 0) {
+        return <div>Loading...</div>;
+    }
 
-  return (
-    <div className="grid grid-cols-3">
-      {media.map(item => (
-        <div key={item.id}>
-          <img src={item.media_url} alt={item.caption || 'Instagram post'} />
-          <p>{item.caption}</p>
+    return (
+        <div className="grid grid-cols-3">
+            {media.map(item => (
+                <div key={item.id}>
+                    <img src={item.media_url} alt={item.caption || 'Instagram post'} />
+                    <p>{item.caption}</p>
+                </div>
+            ))}
         </div>
-      ))}
-    </div>
-  );
-};
+    );
+}
 
-export default InstaGrid;
+export default InstaGrid 
