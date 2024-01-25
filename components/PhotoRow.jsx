@@ -8,6 +8,7 @@ const PhotoRow =()=>{
             src="/food1.jpeg"
             height={200}
             width={200}
+            className="rounded"
             />
             Hand Smoked BBQ
             </div>
@@ -16,6 +17,7 @@ const PhotoRow =()=>{
             src="/food1.jpeg"
             height={200}
             width={200}
+            className="rounded"
             />
             All Day Breakfast</div>
         <div>
@@ -23,6 +25,7 @@ const PhotoRow =()=>{
             src="/food1.jpeg"
             height={200}
             width={200}
+            className="rounded"
             />
             Lunch & Other Bites</div>
         </div>
