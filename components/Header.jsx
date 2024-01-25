@@ -4,13 +4,14 @@ const Header = () => {
         <div className="">
             <div className="headercontainer flex flex-col justify-center items-center">
                 <Image
-                    src="/jacks.jpeg"
-                    height={200}
-                    width={200}
+                    src="/newlogo.png"
+                    height={400}
+                    width={400}
                 />
-                <button className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                <div className="my-12">
+                <button className="rounded-md bg-emerald-800 px-3.5 py-2.5 text-2xl font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >Order Now!</button>
-
+</div>
             </div>
             <div className="flex flex-col justify-center items-center ">
                     <div>

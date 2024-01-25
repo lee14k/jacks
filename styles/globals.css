@@ -11,5 +11,6 @@
 }
 
 .headerbg{
-  background-image:url("/grainbg.png")
+  background-image:url("/jackstexture.png");
+  background-size:cover;
 }
