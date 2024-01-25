@@ -14,3 +14,36 @@
   background-image:url("/jackstexture.png");
   background-size:cover;
 }
+
+.menu-container {
+  position: fixed;
+  bottom: 200px;
+  right: 90px;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.menu-stack {
+  width: 160px; /* Adjust as needed */
+  height: 160px; /* Adjust as needed */
+  background-color: #fff; /* Or any other color for your 'blank boxes' */
+  border: 2px solid #ddd; /* Optional, for border */
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3); /* For shadow effect */
+  position: absolute;
+  border-radius: 0px; /* Optional, for rounded corners */
+}
+
+/* Offset each 'stack' slightly to create the stacked effect */
+.menu-stack:nth-child(1) {
+  transform: translate(8px, 8px);
+}
+.menu-stack:nth-child(2) {
+  transform: translate(4px, 4px);
+}
+/* The third '.menu-stack' will not be transformed as it's the one directly below the icon */
+
+.menu-icon {
+  position:fixed;
+  bottom: 9%;
+  right: 0px;
+  z-index: 2000; /* Ensure the menu icon is above the stacks */
+}
