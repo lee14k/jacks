@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { Rubik_Doodle_Shadow } from "next/font/google";
+const rubik = Rubik_Doodle_Shadow({   weight: '400',
+subsets: ["latin"] });
+
 const Header = () => {
     return (
         <div className="">
@@ -16,7 +20,9 @@ const Header = () => {
             <div className="flex flex-col justify-center items-center ">
                     <div className="mx-48">
                         <h2 className="text-4xl">Hometown cooking</h2>
-                        <h3 className="text-6xl">At the crossroads of the UP</h3>
+                        <div>
+                        <h3 className="bgClip">At the crossroads of the UP</h3>
+                        </div>
                         <p className="mr-24">Welcome to Jack's, where family and flavor come together in the heart of Rapid River! Our cozy diner-style restaurant has been serving up delicious meals and warm smiles for generations. From mouthwatering breakfasts to hearty lunches and hand-smoked BBQ and dinners, we take pride in offering  dishes made with love.</p>
                     </div>
                    

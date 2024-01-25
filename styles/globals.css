@@ -57,3 +57,16 @@
   background-size:cover;
   z-index:2000;
 }
+
+
+.bgClip {
+  background-image: url("https://3.bp.blogspot.com/-6Cw056uPYug/UjS0rCZ8x0I/AAAAAAAABAE/nGHZHmFmPzs/s1600/234.jpg");
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px; /* Adjust as needed for visibility */
+  font-weight: bold; /* Bold text often works better */
+}

@@ -7,7 +7,6 @@ import PhotoRow from "@/components/PhotoRow";
 import InstaGrid from "@/components/InstaGrid";
 import StackedMenu from "@/components/StackedMenu";
 const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <div>
