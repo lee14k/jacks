@@ -40,10 +40,10 @@
   transform: rotate(-20deg) translate(-50px, -30px);
 }
 .menu-stack:nth-child(2) {
-  transform: rotate(-30deg) translate(-15px, -15px);
+  transform: rotate(-37deg) translate(-45px, -15px);
 }
 .menu-stack:nth-child(3) {
-  transform: rotate(0deg);
+  transform: rotate(-10deg) translate(-45px, -5px);
 }
 .menu-icon {
   position:fixed;
@@ -60,7 +60,7 @@
 
 
 .bgClip {
-  background-image: url("https://3.bp.blogspot.com/-6Cw056uPYug/UjS0rCZ8x0I/AAAAAAAABAE/nGHZHmFmPzs/s1600/234.jpg");
+  background-image: url("/woodtexture.png"), linear-gradient(to right, #f0f0f0 0%,#ffffff 100%);
   background-size: cover;
   background-position: center;
   color: transparent;

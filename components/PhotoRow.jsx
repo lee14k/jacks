@@ -6,8 +6,8 @@ const PhotoRow =()=>{
         <div className="text-xl">
             <Image
             src="/food1.jpeg"
-            height={200}
-            width={200}
+            height={400}
+            width={400}
             className="rounded"
             />
             Hand Smoked BBQ
@@ -15,16 +15,16 @@ const PhotoRow =()=>{
         <div className="text-xl">
         <Image
             src="/food1.jpeg"
-            height={200}
-            width={200}
+            height={400}
+            width={400}
             className="rounded"
             />
             All Day Breakfast</div>
         <div className="text-xl">
         <Image
             src="/food1.jpeg"
-            height={200}
-            width={200}
+            height={400}
+            width={400}
             className="rounded"
             />
             Lunch & Other Bites</div>
