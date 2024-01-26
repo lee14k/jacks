@@ -28,7 +28,7 @@ const InstaGrid = () => {
     }
 
     return (
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 my-16">
             {media.map(item => (
                 <div key={item.id}>
                     <img src={item.media_url} alt={item.caption || 'Instagram post'} />

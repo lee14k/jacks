@@ -18,7 +18,7 @@ const Header = () => {
 </div>
             </div>
             <div className="flex flex-col justify-center items-center ">
-                    <div className="mx-48">
+                    <div className="mx-48 my-32">
                         <h2 className="text-4xl">Hometown cooking</h2>
                         <div>
                         <h3 className="bgClip">At the crossroads of the UP</h3>
