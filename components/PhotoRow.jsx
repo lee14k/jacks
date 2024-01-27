@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Rubik_Doodle_Shadow } from "next/font/google";
-const rubik = Rubik_Doodle_Shadow({
+import { Rubik_Dirt } from "next/font/google";
+const rubik = Rubik_Dirt({
     weight: '400',
     subsets: ["latin"]
 });
