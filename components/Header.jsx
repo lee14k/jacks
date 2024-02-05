@@ -8,7 +8,7 @@ const Header = () => {
         <div className="">
             <div className="headercontainer flex flex-col justify-center items-center">
                 <Image
-                    src="/newlogo.png"
+                    src="/newjacks.png"
                     height={400}
                     width={400}
                 />
