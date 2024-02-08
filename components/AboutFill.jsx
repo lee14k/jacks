@@ -364,7 +364,7 @@ export default function AboutFill() {
               />
               <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+                src="/rrlogo.png"
                 alt="Reform"
                 width={158}
                 height={48}

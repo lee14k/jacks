@@ -1,5 +1,4 @@
 export default async function handler(req, res) {
-
     try {
         const fields = 'id,media_type,media_url,caption';
         const accessToken = process.env.INSTAGRAM_TOKEN;
@@ -12,7 +11,11 @@ export default async function handler(req, res) {
             return res.status(500).json({ error: data.error });
         }
 
-        res.status(200).json(data.data);
+        // Filter out any data that is not an image
+        const imageData = data.data.filter(item => item.media_type === 'IMAGE');
+
+        // Return only the filtered images
+        res.status(200).json(imageData);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching Instagram media' });
     }
