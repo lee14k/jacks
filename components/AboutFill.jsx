@@ -198,7 +198,7 @@ export default function AboutFill() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people connect.
+                    Homecooking in the heart of rural Michigan
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
@@ -352,18 +352,17 @@ export default function AboutFill() {
           </div>
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-              Trusted by the world’s most innovative teams
-            </h2>
+We support the following local organizations (and so many more!)            </h2>
             <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="col-span-2 max-h-32 w-full object-contain lg:col-span-1"
                 src="/honorlogo.png"
                 alt="Transistor"
-                width={158}
-                height={48}
+                width={458}
+                height={128}
               />
               <img
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="col-span-2 max-h-32 w-full object-contain lg:col-span-1"
                 src="/rrlogo.png"
                 alt="Reform"
                 width={158}
