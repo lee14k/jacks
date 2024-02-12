@@ -32,7 +32,6 @@ const InstaGrid = () => {
             {media.map(item => (
                 <div key={item.id}>
                     <img src={item.media_url} alt={item.caption || 'Instagram post'} />
-                    <p>{item.caption}</p>
                 </div>
             ))}
         </div>
