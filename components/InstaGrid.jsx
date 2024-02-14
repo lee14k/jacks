@@ -28,12 +28,15 @@ const InstaGrid = () => {
     }
 
     return (
-        <div className="grid grid-cols-3 my-16">
+        <div className="flex justify-center items-center">
+        <div className="grid grid-cols-3 my-16 w-3/4 gap-4">
             {media.map(item => (
-                <div key={item.id}>
-                    <img src={item.media_url} alt={item.caption || 'Instagram post'} />
+                // Update this div to use flex and center items
+                <div key={item.id} className="flex justify-center items-center">
+                    <img src={item.media_url} alt={item.caption || 'Instagram post'} className=" max-w-full h-auto"/>
                 </div>
             ))}
+        </div>
         </div>
     );
 }

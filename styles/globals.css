@@ -143,3 +143,8 @@ section {
 .book.flipped::before {
   transform: rotateY(0deg);
 }
+
+.instapic {
+  height:400px;
+  width:auto;
+}
