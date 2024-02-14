@@ -77,12 +77,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin:100px;
+  padding-right:50px;
 }
 
 .book {
   background-color: #fff;
-  width: 300px;
-  height: 200px;
+  width: 700px;
+  height: 500px;
   border-radius: 20px;
   perspective: 600px;
   position: relative;
@@ -124,6 +126,11 @@ section {
   background-color: #ee5f2a;
   border-radius: 20px 0 0 20px;
   left: 0;
+  background-image:url('/menuone.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:400px auto;
 }
 
 .book .pg.pg2 {

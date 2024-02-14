@@ -17,14 +17,17 @@ const MenuBook = () => {
 
     return (
         <section>
+                        <button className="flipButton prev" onClick={flipPrev}>&lt;</button>
+
             <div className={`book ${isFlipped ? 'flipped' : ''}`}>
                 {/* Assuming cover is part of what flips; adjust if your structure is different */}
                 <div className="cover"></div> 
                 <div className="pg pg1">HTML</div>
                 <div className="pg pg2">CSS</div>
             </div>
-            <button className="flipButton prev" onClick={flipPrev}>&lt;</button>
+            <div>
             <button className="flipButton next" onClick={flipNext}>&gt;</button>
+            </div>
         </section>
     );
 };
