@@ -6,6 +6,11 @@ subsets: ["latin"] });
 import { Cedarville_Cursive } from "next/font/google";
 const cedar = Cedarville_Cursive({   weight: '400',
 subsets: ["latin"] });
+
+import { Merriweather } from "next/font/google";
+
+const merriweather = Merriweather({   weight: '400',
+subsets: ["latin"] });
 const Header = () => {
     return (
         <div className="headerwrapper">
@@ -24,11 +29,11 @@ const Header = () => {
             </div>
             <div className="flex flex-col justify-center items-center ">
                     <div className="mx-48 my-32">
-                        <div className={cedar.className}>                       
-                         <h2 className="text-6xl">Hometown cooking</h2>
+                        <div className={merriweather.className}>                       
+                         <h2 className="text-8xl">Hometown cooking</h2>
 </div>
                         <div>
-                        <h3 className="bgClip text-8xl">At the crossroads of the UP</h3>
+                        <h3 className="text-6xl">At the crossroads of the UP</h3>
                         </div>
                         <p className="mr-24">Welcome to Jack's, where family and flavor come together in the heart of Rapid River! Our cozy diner-style restaurant has been serving up delicious meals and warm smiles for generations. From mouthwatering breakfasts to hearty lunches and hand-smoked BBQ and dinners, we take pride in offering  dishes made with love.</p>
                     </div>

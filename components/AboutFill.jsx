@@ -201,10 +201,8 @@ export default function AboutFill() {
                     Homecooking in the heart of rural Michigan
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
-                    labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
-                    mollit id pariatur in voluptate cillum. Eu voluptate tempor esse minim amet fugiat veniam occaecat
-                    aliqua.
+                  At Jack's Restaurant we are proud to be part of the vibrant community of Rapid River, Michigan - a place we call home. Nestled at the crossroads of the Upper Peninsula, Rapid River stands as a welcoming beacon to travelers navigating the intersection of the region's major highways. It's a unique spot where adventurers heading to any corner of the U.P., inevitably pass by.  Whether you're traveling from Menominee to Marquette or Fayette to Copper Harbor our town serves as a gathering point for stories, laughter, and, of course, great food. Here at Jack's, we cherish the opportunity to serve both our local community and the myriad of visitors embarking on their northern journeys. Rapid River is more than just a waypoint; it's a place where connections are made, and memories are shared, truly embodying the spirit of the Upper Peninsula.
+
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
