@@ -6,7 +6,7 @@
   background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/outsidejacks.jpg');
   background-size:cover;
   background-position:center;
-  height:500px;
+  height:700px;
 
 }
 
@@ -69,4 +69,70 @@
   -webkit-text-fill-color: transparent;
   font-size: 60px; /* Adjust as needed for visibility */
   font-weight: bold; /* Bold text often works better */
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  background-color: #fff;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  perspective: 600px;
+  position: relative;
+}
+
+.book::before {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  width: 50%;
+  height: 100%;
+  right: 50%;
+  background-color: #707070;
+  border-radius: 20px 0 0 20px;
+  transform-origin: center right;
+  transform: rotateY(180deg);
+  transition: 0.7s ease all;
+}
+
+/* This hover effect rule is removed to ensure flipping is controlled by clicks */
+/*.book:hover::before {
+  transform: rotateY(0deg);
+}*/
+
+.book .pg {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.book .pg.pg1 {
+  background-color: #ee5f2a;
+  border-radius: 20px 0 0 20px;
+  left: 0;
+}
+
+.book .pg.pg2 {
+  background-color: #30a5da;
+  right: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+/* Use this class to control the flip effect through JavaScript by adding/removing this class */
+.book.flipped::before {
+  transform: rotateY(0deg);
 }
