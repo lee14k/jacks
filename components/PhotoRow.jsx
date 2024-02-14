@@ -11,7 +11,7 @@ const PhotoRow = () => {
             <div className="grid grid-cols-3 gap-4">
                 <div className="text-4xl flex flex-col justify-center items-center font-bold text-white">
                     <Image
-                        src="/food1.jpeg"
+                        src="/BBQ-.jpg"
                         height={400}
                         width={400}
                         className="rounded"
@@ -20,7 +20,7 @@ const PhotoRow = () => {
                 </div>
                 <div className="text-4xl flex flex-col justify-center items-center font-bold text-white">
                     <Image
-                        src="/food1.jpeg"
+                        src="/bfast.jpg"
                         height={400}
                         width={400}
                         className="rounded"
@@ -28,7 +28,7 @@ const PhotoRow = () => {
                     <h4 className={rubik.className}>All Day Breakfast</h4>    </div>
                 <div className="text-4xl flex flex-col justify-center items-center font-bold text-white">
                     <Image
-                        src="/food1.jpeg"
+                        src="/lunch.jpg"
                         height={400}
                         width={400}
                         className="rounded"

@@ -16,7 +16,7 @@ const MenuBook = () => {
     };
 
     return (
-        <section>
+        <section className="menusection">
                         <button className="flipButton prev" onClick={flipPrev}>&lt;</button>
 
             <div className={`book ${isFlipped ? 'flipped' : ''}`}>

@@ -15,29 +15,29 @@ const stats = [
 ]
 const values = [
   {
-    name: 'Be world-class',
+    name: 'Scratch Kitchen',
     description:
-      'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+      'Every meal at Jack’s starts in our from-scratch kitchen, where the magic of fresh ingredients meets culinary passion. Our menu features dishes that are not only flavorful but also heartwarming, embodying our dedication to quality and excellence.',
   },
   {
-    name: 'Share everything you know',
+    name: 'Community',
     description:
-      'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
+      'At the heart of Jack’s is a deep-seated commitment to caring for our community, recognizing that our restaurant is more than a place to eat; it’s a place where people come together, forming bonds that strengthen and enrich our shared lives.',
   },
   {
-    name: 'Always learning',
+    name: 'Young Adults',
     description:
-      'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
+      'We believe in the power of mentorship and support for young adults, offering them a platform to learn, grow, and thrive within our walls, reflecting our commitment to fostering the next generation of leaders and innovators.',
   },
   {
-    name: 'Be supportive',
+    name: 'Unique Flavors',
     description:
-      'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
+      'Jack’s is a culinary adventure with daily specials and unique dishes where unique flavors from around the globe are celebrated and shared, showcasing our passion for bringing diverse and exciting tastes to our patrons, because variety is the spice of life.',
   },
   {
-    name: 'Take responsibility',
+    name: 'Innovation',
     description:
-      'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
+      'Innovation is at the core of Jack’s ethos, encouraging both our team and our guests to always be open to trying new things, fostering a culture of creativity and exploration that keeps us moving forward and keeps our offerings dynamic and engaging',
   },
   {
     name: 'Enjoy downtime',
@@ -221,7 +221,7 @@ export default function AboutFill() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="/whitefour.jpg"
+                        src="/about-2-2722.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -229,7 +229,7 @@ export default function AboutFill() {
                     </div>
                     <div className="relative">
                       <img
-                        src="/whiteone.jpg"
+                        src="/about-4-2749.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -239,7 +239,7 @@ export default function AboutFill() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="/whitetwo.jpg"
+                        src="/about-5-5237.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -247,7 +247,7 @@ export default function AboutFill() {
                     </div>
                     <div className="relative">
                       <img
-                        src="/whitethree.jpg"
+                        src="/about-6-5215.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -313,8 +313,7 @@ export default function AboutFill() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our values</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-              accusamus quisquam.
+            At Jack's we do things the old fashioned way, and our values show it:
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -461,28 +460,7 @@ We support the following local organizations (and so many more!)            </h2
       </main>
 
       {/* Footer */}
-      <footer className="mx-auto mt-40 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
-        <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
-          {footerNavigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
-              <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
-                {item.name}
-              </a>
-            </div>
-          ))}
-        </nav>
-        <div className="mt-10 flex justify-center space-x-10">
-          {footerNavigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
-        </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2020 Your Company, Inc. All rights reserved.
-        </p>
-      </footer>
+     
     </div>
   )
 }
