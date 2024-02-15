@@ -75,8 +75,8 @@
 
 .book {
   background-color: #fff;
-  width: 700px;
-  height: 500px;
+  width: 1000px;
+  height: 600px;
   border-radius: 20px;
   perspective: 600px;
   position: relative;
@@ -96,10 +96,7 @@
   transition: 0.7s ease all;
 }
 
-/* This hover effect rule is removed to ensure flipping is controlled by clicks */
-/*.book:hover::before {
-  transform: rotateY(0deg);
-}*/
+
 
 .book .pg {
   position: absolute;
@@ -122,7 +119,7 @@
   background-size:cover;
   background-repeat: no-repeat;
   background-position:center;
-  background-size:400px auto;
+  background-size:500px auto;
 }
 
 .book .pg.pg2 {
