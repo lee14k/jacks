@@ -40,7 +40,7 @@ const values = [
       'Innovation is at the core of Jack’s ethos, encouraging both our team and our guests to always be open to trying new things, fostering a culture of creativity and exploration that keeps us moving forward and keeps our offerings dynamic and engaging',
   },
   {
-    name: 'Enjoy downtime',
+    name: 'History',
     description:
       'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
   },
