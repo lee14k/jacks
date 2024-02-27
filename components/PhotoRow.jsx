@@ -8,7 +8,7 @@ const rubik = Rubik_Dirt({
 const PhotoRow = () => {
     return (
         <div className="headerbg flex flex-col justify-center items-center gap-4 py-24">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-col-1 sm:grid-cols-3 gap-4">
                 <div className="text-4xl flex flex-col justify-center items-center font-bold text-white">
                     <Image
                         src="/BBQ-.jpg"
