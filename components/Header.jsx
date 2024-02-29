@@ -27,7 +27,7 @@ const Header = () => {
                 </Link>
 </div>
             </div>
-            <div className="flex flex-col justify-center items-center ">
+            <div className="flex flex-col justify-center items-center text-center ">
                     <div className="mx-48 my-32">
                         <div className={merriweather.className}>                       
                          <h2 className="text-8xl">Hometown cooking</h2>
