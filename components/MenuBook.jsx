@@ -1,44 +1,52 @@
 import React, { useState } from 'react';
-// Ensure your CSS file is correctly imported
 
 const MenuBook = () => {
-    // State to track if the book is flipped (true for flipped, false for not flipped)
-    const [isFlipped, setIsFlipped] = useState(false);
+  const [currentPage, setCurrentPage] = useState(0);
+  const totalPages = 8; // Adjust based on your actual page count
 
-    // Function to flip to the next page (toggle flip state)
-    const flipNext = () => {
-        setIsFlipped(true); // Assuming flipping forward always flips the book
-    };
+  // Example URLs for background images, replace these with your actual image URLs
+  const pageBackgroundImages = [
+    'url("/1.png")',
+    'url("/2.png")',
+    'url("/3.png")',
+    'url("/4.png")',
+    'url("/5.png")',
+    'url("/6.png")',
+    'url("/7.png")',
+    'url("/8.png")',
+  ];
 
-    // Function to flip to the previous page (toggle flip state back)
-    const flipPrev = () => {
-        setIsFlipped(false); // Assuming flipping back returns to the original state
-    };
+  // Function to flip to the next page
+  const flipNext = () => {
+    if (currentPage < totalPages - 1) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
 
-    return (
-        <section className="menusection">
-                        <button className="flipButton prev" onClick={flipPrev}>&lt;</button>
+  // Function to flip to the previous page
+  const flipPrev = () => {
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
 
-            <div className={`book ${isFlipped ? 'flipped' : ''}`}>
-                {/* Assuming cover is part of what flips; adjust if your structure is different */}
-                <div className="cover"></div> 
-                <div className="pg pg1">HTML</div>
-                <div className="pg pg2">CSS</div>
-                <div className="pg pg3">CSS</div>
-                <div className="pg pg4">CSS</div>
-                <div className="pg pg5">CSS</div>
-                <div className="pg pg6">CSS</div>
-                <div className="pg pg7">CSS</div>
-                <div className="pg pg8">CSS</div>
-
-
-
-            </div>
-            <div>
-            <button className="flipButton next" onClick={flipNext}>&gt;</button>
-            </div>
-        </section>
-    );
+  return (
+    <section className="menuSection">
+      <button className="flipButton prev" onClick={flipPrev} disabled={currentPage === 0}>&lt;</button>
+      <div className="book">
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <div 
+            key={index} 
+            className={`page ${index === currentPage ? 'visible' : 'hidden'}`} 
+            style={{ backgroundImage: pageBackgroundImages[index], backgroundSize: 'contain', height: '100%', width: '100%' }}
+          >
+            {/* You can still add content here if needed */}
+          </div>
+        ))}
+      </div>
+      <button className="flipButton next" onClick={flipNext} disabled={currentPage === totalPages - 1}>&gt;</button>
+    </section>
+  );
 };
 
 export default MenuBook;

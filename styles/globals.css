@@ -93,38 +93,6 @@
   transition: 0.7s ease all;
 }
 
-.book .pg {
-  position: absolute;
-  width: 50%;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.book .pg.pg1 {
-  background-color: #ee5f2a;
-  border-radius: 20px 0 0 20px;
-  left: 0;
-  background-image: url("/menuone.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 500px auto;
-}
-
-.book .pg.pg2 {
-  background-color: #30a5da;
-  right: 0;
-  border-radius: 0 20px 20px 0;
-  background-image: url("/menuone.png");
-}
-
-/* Use this class to control the flip effect through JavaScript by adding/removing this class */
 .book.flipped::before {
   transform: rotateY(0deg);
 }
@@ -144,6 +112,15 @@
   padding-right: 50px;
 }
 
+.sheet {
+  display: none; /* Hide sheets by default */
+}
+
+.sheet.visible {
+  display: block; /* Only show the current sheet */
+  /* Add flipping animations here */
+}
+
 @media screen and (max-width: 1000px) {
   .headerwrapper {
     width: 130vw;
@@ -152,4 +129,41 @@
   .headerbg {
     width: 140vw;
   }
+}
+
+.book {
+  background-color: #fff;
+  width: 1000px;
+  height: 600px;
+  border-radius: 20px;
+  perspective: 600px;
+  position: relative;
+  overflow: hidden; /* Ensure parts of pages don't show outside the book */
+}
+
+/* No changes needed for .book::before based on your original setup */
+
+.page {
+  position: absolute;
+  width: 100%; /* Adjusted to cover the full book width */
+  height: 100%; /* Cover the full book height */
+  background-position: center;
+  backface-visibility: hidden; /* Hide the back side of the page when flipped */
+  transition: transform 0.7s ease; /* Smooth transition for flipping */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+}
+
+/* Adjust visibility based on class toggles in React */
+.page.hidden {
+  display: none; /* Hide non-visible pages */
+}
+
+.page.visible {
+  display: block; /* Show the current page */
+}
+
+/* Example flip effect for moving to the next or previous page */
+/* You might need to adjust this based on how you handle the flip effect in React */
+.page.flipping {
+  transform: rotateY(180deg); /* Flip the page */
 }
