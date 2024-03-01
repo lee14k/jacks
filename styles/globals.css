@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 .headercontainer {
-  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/outsidejacks.jpg');
-  background-size:cover;
-  background-position:center;
-  height:40em;
-  width:100%;
-
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/outsidejacks.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40em;
+  width: 100%;
 }
 
-.headerbg{
-  background-image:url("/ygwj.png");
-  background-size:cover;
+.headerbg {
+  background-image: url("/ygwj.png");
+  background-size: cover;
 }
 
 .menu-container {
@@ -22,7 +22,6 @@
   right: 80px;
   z-index: 1000;
   transform: rotate(10deg) translate(-20px, -20px);
-
 }
 
 .menu-stack {
@@ -37,7 +36,7 @@
 
 /* Adjust rotation and translation for larger size */
 .menu-stack:nth-child(1) {
-  top:20px;
+  top: 20px;
   transform: rotate(-20deg) translate(-50px, -30px);
 }
 .menu-stack:nth-child(2) {
@@ -47,21 +46,20 @@
   transform: rotate(-10deg) translate(-45px, -5px);
 }
 .menu-icon {
-  position:fixed;
-  right:500px;
+  position: fixed;
+  right: 500px;
   z-index: 2000; /* Ensure the menu icon is above the stacks */
-
 }
 
-.menu-one{
-  background-image:url('/menuone.png');
-  background-size:cover;
-  z-index:2000;
+.menu-one {
+  background-image: url("/menuone.png");
+  background-size: cover;
+  z-index: 2000;
 }
-
 
 .bgClip {
-  background-image: url("/woodtexture.png"), linear-gradient(to right, #f0f0f0 0%,#ffffff 100%);
+  background-image: url("/woodtexture.png"),
+    linear-gradient(to right, #f0f0f0 0%, #ffffff 100%);
   background-size: cover;
   background-position: center;
   color: transparent;
@@ -71,8 +69,6 @@
   font-size: 60px; /* Adjust as needed for visibility */
   font-weight: bold; /* Bold text often works better */
 }
-
-
 
 .book {
   background-color: #fff;
@@ -84,7 +80,7 @@
 }
 
 .book::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 5;
   width: 50%;
@@ -96,8 +92,6 @@
   transform: rotateY(180deg);
   transition: 0.7s ease all;
 }
-
-
 
 .book .pg {
   position: absolute;
@@ -116,17 +110,18 @@
   background-color: #ee5f2a;
   border-radius: 20px 0 0 20px;
   left: 0;
-  background-image:url('/menuone.png');
-  background-size:cover;
+  background-image: url("/menuone.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position:center;
-  background-size:500px auto;
+  background-position: center;
+  background-size: 500px auto;
 }
 
 .book .pg.pg2 {
   background-color: #30a5da;
   right: 0;
   border-radius: 0 20px 20px 0;
+  background-image: url("/menuone.png");
 }
 
 /* Use this class to control the flip effect through JavaScript by adding/removing this class */
@@ -135,8 +130,8 @@
 }
 
 .instapic {
-  height:400px;
-  width:auto;
+  height: 400px;
+  width: auto;
 }
 
 .menusection {
@@ -145,16 +140,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:100px;
-  padding-right:50px;
+  margin: 100px;
+  padding-right: 50px;
 }
 
 @media screen and (max-width: 1000px) {
   .headerwrapper {
-    width:130vw;
+    width: 130vw;
   }
 
   .headerbg {
-    width:140vw;
+    width: 140vw;
   }
 }

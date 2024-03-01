@@ -24,6 +24,15 @@ const MenuBook = () => {
                 <div className="cover"></div> 
                 <div className="pg pg1">HTML</div>
                 <div className="pg pg2">CSS</div>
+                <div className="pg pg3">CSS</div>
+                <div className="pg pg4">CSS</div>
+                <div className="pg pg5">CSS</div>
+                <div className="pg pg6">CSS</div>
+                <div className="pg pg7">CSS</div>
+                <div className="pg pg8">CSS</div>
+
+
+
             </div>
             <div>
             <button className="flipButton next" onClick={flipNext}>&gt;</button>
