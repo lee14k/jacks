@@ -38,7 +38,7 @@ const MenuBook = () => {
           <div 
             key={index} 
             className={`page ${index === currentPage ? 'visible' : 'hidden'}`} 
-            style={{ backgroundImage: pageBackgroundImages[index], backgroundSize: 'contain', height: '100%', width: '100%' }}
+            style={{ backgroundImage: pageBackgroundImages[index], backgroundSize: 'cover', height: '100%', width: '100%' }}
           >
             {/* You can still add content here if needed */}
           </div>

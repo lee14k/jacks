@@ -114,31 +114,13 @@
 
 .sheet {
   display: none; /* Hide sheets by default */
+width:  100%;
+
 }
-
-.sheet.visible {
-  display: block; /* Only show the current sheet */
-  /* Add flipping animations here */
-}
-
-@media screen and (max-width: 1000px) {
-  .headerwrapper {
-    width: 130vw;
-  }
-
-  .headerbg {
-    width: 140vw;
-  }
-}
-
 .book {
   background-color: #fff;
-  width: 1000px;
-  height: 600px;
-  border-radius: 20px;
-  perspective: 600px;
-  position: relative;
-  overflow: hidden; /* Ensure parts of pages don't show outside the book */
+  width: 75%;
+  height: 900px                                                                                                         
 }
 
 /* No changes needed for .book::before based on your original setup */
@@ -147,7 +129,7 @@
   position: absolute;
   width: 100%; /* Adjusted to cover the full book width */
   height: 100%; /* Cover the full book height */
-  background-position: center;
+  background-position: center;                                                                                                                                                                                                      
   backface-visibility: hidden; /* Hide the back side of the page when flipped */
   transition: transform 0.7s ease; /* Smooth transition for flipping */
   transform-style: preserve-3d; /* Enable 3D transformations */
