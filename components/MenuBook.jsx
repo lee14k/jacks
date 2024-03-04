@@ -8,14 +8,14 @@ const MenuBook = () => {
 
   // Example URLs for background images, replace these with your actual image URLs
   const pageBackgroundImages = [
-    '/1.png',
-    '/2.png',
-    '/3.png',
-    '/4.png',
-    '/5.png',
-    '/6.png',
-    '/7.png',
-    '/8.png',
+    "/1.png",
+    "/2.png",
+    "/3.png",
+    "/4.png",
+    "/5.png",
+    "/6.png",
+    "/7.png",
+    "/8.png",
   ];
 
   const flipNext = () => {
@@ -57,8 +57,12 @@ const MenuBook = () => {
   };
 
   return (
-    <section className="menuSection">
-      <button className="flipButton prev" onClick={flipPrev} disabled={currentPage === 0}>
+    <section className="menuSection flex justify-center items-center">
+      <button
+        className="flipButton prev"
+        onClick={flipPrev}
+        disabled={currentPage === 0}
+      >
         &lt;
       </button>
       <div className="book">
@@ -73,9 +77,9 @@ const MenuBook = () => {
             transitions={pageTransition}
             style={{
               backgroundImage: `url(${pageBackgroundImages[currentPage]})`,
-              backgroundSize: "cover",
+              backgroundSize: "contain",
               height: "100%",
-              width: "100%",
+              width: "65%",
               position: "absolute",
             }}
           >
@@ -83,7 +87,11 @@ const MenuBook = () => {
           </motion.div>
         </AnimatePresence>
       </div>
-      <button className="flipButton next" onClick={flipNext} disabled={currentPage === totalPages - 1}>
+      <button
+        className="flipButton next"
+        onClick={flipNext}
+        disabled={currentPage === totalPages - 1}
+      >
         &gt;
       </button>
     </section>
