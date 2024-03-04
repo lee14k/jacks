@@ -74,16 +74,18 @@ const MenuBook = () => {
             initial="enter"
             animate="center"
             exit="exit"
-            transitions={pageTransition}
+            transition={pageTransition}
             style={{
-              backgroundImage: `url(${pageBackgroundImages[currentPage]})`,
-              backgroundSize: "contain",
               height: "100%",
-              width: "65%",
+              width: "100%",
               position: "absolute",
             }}
           >
-            {/* Content of the page */}
+            <img
+              src={pageBackgroundImages[currentPage]}
+              alt={`Menu Page ${currentPage + 1}`}
+              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            />
           </motion.div>
         </AnimatePresence>
       </div>

@@ -74,38 +74,30 @@
   height: 400px;
   width: auto;
 }
-
-.menusection {
+menuSection {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px;
-  padding-right: 50px;
+  margin: 100px auto; /* Centered with auto margin */
+  padding: 0 50px; /* Adjust padding as needed */
 }
 
-.sheet {
-  display: none; /* Hide sheets by default */
-  width: 100%;
-}
 .book {
   background-color: #fff;
-  width: 75%;
-  height: 900px;
+  width: 75%; /* Adjust based on your layout preference */
+  height: 900px; /* Fixed height, remove padding-top if not using for aspect ratio */
+  position: relative; /* For absolute positioning of children */
+  overflow: hidden; /* Keep everything contained */
 }
-
-/* No changes needed for .book::before based on your original setup */
 
 .page {
-  width: 100%; /* Adjusted to cover the full book width */
-  height: 100%; /* Cover the full book height */
-}
-
-/* Adjust visibility based on class toggles in React */
-.page.hidden {
-  display: none; /* Hide non-visible pages */
-}
-
-.page.visible {
-  display: block; /* Show the current page */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain; /* Or cover, depending on your preference */
+  background-repeat: no-repeat;
+  background-position: center center; /* Center the background image */
 }
