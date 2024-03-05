@@ -16,7 +16,7 @@ export default function Menu  () {
 </div>
         <MenuBook/>
         <div className="flex flex-col justify-center items-center">
-        <Link href="https://orders.cake.net/11333695">
+        <Link href="/menu.pdf">
                 <button className="rounded-md bg-emerald-800 my-12 px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >PDF Menu</button>
                 </Link>
