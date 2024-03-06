@@ -59,7 +59,7 @@ const MenuBook = () => {
   return (
     <section className="menuSection flex justify-center items-center">
       <button
-        className="flipButton prev"
+        className="flipButton prev rounded-full bg-gray-200 w-20 h-20"
         onClick={flipPrev}
         disabled={currentPage === 0}
       >
@@ -90,7 +90,7 @@ const MenuBook = () => {
         </AnimatePresence>
       </div>
       <button
-        className="flipButton next"
+        className="flipButton next rounded-full bg-gray-200 w-20 h-20"
         onClick={flipNext}
         disabled={currentPage === totalPages - 1}
       >
