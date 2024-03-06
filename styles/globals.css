@@ -12,7 +12,7 @@
 }
 
 .headerbg {
-  background-image: url("/ygwj.png");
+  background-image: url("/gyj.png");
   background-size: cover;
 }
 
@@ -74,7 +74,7 @@
   height: 400px;
   width: auto;
 }
-menuSection {
+.menuSection {
   width: 100%;
   display: flex;
   justify-content: center;
