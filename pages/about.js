@@ -6,7 +6,9 @@ export default function About  () {
         <div>
             <Navbar/>
         <AboutFill/>
+        <div className="mt-8">
         <Footer/>
+        </div>
         </div>
     );
 }
