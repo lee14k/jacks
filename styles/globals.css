@@ -100,3 +100,8 @@
   background-repeat: no-repeat;
   background-position: center center; /* Center the background image */
 }
+
+.instacontainer {
+  border: 60px solid transparent;
+  border-image: url("/lightgreylace2.png") 35% round;
+}
