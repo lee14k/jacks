@@ -79,7 +79,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px auto; /* Centered with auto margin */
   padding: 0 50px; /* Adjust padding as needed */
 }
 
