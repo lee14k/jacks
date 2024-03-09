@@ -149,13 +149,7 @@ export default function NewContact() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <Link href="https://fallingrock.traitset.com/application/FYJ64C9V216">
-          <button className="rounded-md bg-white px-3.5 py-2.5 text-md font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-            Learn more
-          </button>
-        </Link>
-      </div>
+
       <Footer />
     </div>
   );
