@@ -12,25 +12,20 @@ const PhotoRow = () => {
     <div className="headerbg flex flex-col justify-center items-center gap-4 py-24">
       <div className="grid grid-col-1 sm:grid-cols-3 gap-4">
         <div className="text-4xl flex flex-col justify-center items-center font-bold ">
-          <Image src="/BBQ-.jpg" height={400} width={400} className="rounded" />
+          <Image src="/rib.png" height={300} width={300} className="rounded" />
           <h4 className={merriweather.className}>Hand Smoked BBQ</h4>
         </div>
         <div className="text-4xl flex flex-col justify-center items-center font-bold ">
           <Image
-            src="/bfast.jpg"
-            height={400}
-            width={400}
+            src="/eggicon.png"
+            height={300}
+            width={300}
             className="rounded"
           />
           <h4 className={merriweather.className}>All Day Breakfast</h4>{" "}
         </div>
         <div className="text-4xl flex flex-col justify-center items-center font-bold ">
-          <Image
-            src="/lunch.jpg"
-            height={400}
-            width={400}
-            className="rounded"
-          />
+          <Image src="/burg.png" height={300} width={300} className="rounded" />
           <h4 className={merriweather.className}>Lunch & Other Bites</h4>{" "}
         </div>
       </div>

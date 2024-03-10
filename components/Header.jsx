@@ -24,6 +24,7 @@ const Header = () => {
       <div className="flex flex-col justify-center items-center text-center ">
         <div className="mx-48 my-32">
           <div className={merriweather.className}>
+            <Image src="/eggicon.png" height={200} width={200} />
             <h2 className="text-8xl">Hometown cooking</h2>
           </div>
           <div>
@@ -36,6 +37,7 @@ const Header = () => {
             mouthwatering breakfasts to hearty lunches and hand-smoked BBQ and
             dinners, we take pride in offering dishes made with love.
           </p>
+          <Image src="/rollicon.png" height={200} width={200} />
         </div>
       </div>
     </div>
