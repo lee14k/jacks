@@ -105,6 +105,20 @@ body {
 }
 
 .instacontainer {
-  border: 60px solid transparent;
-  border-image: url("/lightgreylace2.png") 35% round;
+  position: relative;
+  border: 70px solid transparent;
+  border-image: url("/laceborder.png") 25 round;
+  box-shadow: inset 10p 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.instacontainer::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Extend beyond the container to avoid clipping the shadow */
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  box-shadow: 0 8px 75px rgba(0, 0, 0, 0.7); /* Customize this to get the desired shadow effect */
+  border-radius: inherit; /* If your container has rounded corners */
 }

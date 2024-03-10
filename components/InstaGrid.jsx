@@ -28,7 +28,7 @@ const InstaGrid = () => {
   }
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center bg-transparent">
       <div className="grid sm:grid-cols-3 my-16 w-3/4 gap-4 instacontainer">
         {media.map((item) => (
           // Update this div to use flex and center items
