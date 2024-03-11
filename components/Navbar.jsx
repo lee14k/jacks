@@ -1,26 +1,28 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 // Initial navigation array
 const navigation = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'About', href: '/about', current: false },
-  { name: 'Menu', href: '/menu', current: false },
-  { name: 'Contact', href: '/contact', current: false },
-]
+  { name: "Home", href: "/", current: false },
+  { name: "About", href: "/about", current: false },
+  { href: "/none", current: false, img: "/greenjacks.png" },
+
+  { name: "Menu", href: "/menu", current: false },
+  { name: "Contact", href: "/contact", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
-  const router = useRouter()
+  const router = useRouter();
 
   // Update navigation array based on the current route
-  const updatedNavigation = navigation.map(item => ({
+  const updatedNavigation = navigation.map((item) => ({
     ...item,
     current: item.href === router.asPath,
   }));
@@ -30,7 +32,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 my-16">
-            <div className="relative flex h-16 items-center justify-between">
+            <div className="relative flex h-16 items-center justify-evenly">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -43,30 +45,29 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-24 w-auto"
-                    src="/greenjacks.png"
-                    alt="Your Company"
-                  />
-                  <img
-                    className="hidden lg:block h-24 w-auto"
-                    src="/greenjacks.png"
-                    alt="Your Company"
-                  />
-                </div>
+                <div className="flex-shrink-0 flex items-center"></div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {updatedNavigation.map((item) => (
-                      <Link key={item.name} href={item.href} passHref     className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'hover:bg-gray-700 hover:text-white',
-                        'px-3 py-2 rounded-md text-sm font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
-                  >
-                     
+                      <Link key={item.name} href={item.href} passHref>
+                        <div
+                          className={classNames(
+                            item.current
+                              ? "bg-gray-900 text-white"
+                              : "hover:bg-gray-700 hover:text-white",
+                            "px-3 py-2 rounded-md text-sm font-medium flex items-center cursor-pointer"
+                          )}
+                          aria-current={item.current ? "page" : undefined}
+                        >
+                          {item.img && (
+                            <img
+                              src={item.img}
+                              alt={item.name}
+                              className="mr-2 h-36 w-36"
+                            />
+                          )}
                           {item.name}
-                    
+                        </div>
                       </Link>
                     ))}
                   </div>
@@ -83,11 +84,21 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium flex items-center"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
+                  {item.img && (
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="mr-2 h-36 w-36"
+                    />
+                  )}{" "}
+                  {/* Add image next to text */}
                   {item.name}
                 </Disclosure.Button>
               ))}
@@ -96,5 +107,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

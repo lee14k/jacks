@@ -106,7 +106,7 @@ body {
 
 .instacontainer {
   position: relative;
-  border: 70px solid transparent;
+  border: 60px solid transparent;
   border-image: url("/laceborder.png") 25 round;
   box-shadow: inset 10p 0px 10px rgba(0, 0, 0, 0.4);
 }

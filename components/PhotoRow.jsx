@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Rubik_Dirt } from "next/font/google";
+import Link from "next/link";
 const rubik = Rubik_Dirt({
   weight: "400",
   subsets: ["latin"],
@@ -29,9 +30,11 @@ const PhotoRow = () => {
           <h4 className={merriweather.className}>Lunch & Other Bites</h4>{" "}
         </div>
       </div>
+      <Link href='/menu'>
       <button className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
         View Menu
       </button>
+      </Link>
     </div>
   );
 };
