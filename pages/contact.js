@@ -5,6 +5,7 @@ import NewContact from "@/components/NewContact";
 export default function Contact() {
   return (
     <div>
+      
       <NewContact />
     </div>
   );

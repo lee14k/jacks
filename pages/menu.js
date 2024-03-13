@@ -1,27 +1,49 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import MenuBook from "@/components/MenuBook";
-import Link from "next/link";
-export default function Menu  () {
-    return (
-        <div>
-            <Navbar/>
-            <div className="flex flex-col justify-center items-center">
-                <h1 className="text-6xl">Menu</h1>
-                    <Link href="https://orders.cake.net/11333695">
-                <button className="my-10 rounded-md bg-emerald-800 px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >Order Now!</button>
-                </Link>
-            
-</div>
-        <MenuBook/>
-        <div className="flex flex-col justify-center items-center">
+import MenuBook from "@/components/MenuBook"; // Assuming MenuBook is used somewhere else or remove if not used
+import { useState } from "react";
+
+// Ensure AddTripButton and AnotherComponent are imported if they are used
+// import AddTripButton from "path_to_AddTripButton";
+// import AnotherComponent from "path_to_AnotherComponent";
+
+export default function Menu() {
+  const [state, setState] = useState('start');
+
+  const triggerToggleMenuState = () => {
+    if (state === 'start') {
+      setState('add-trip');
+    } else {
+      setState('start');
+    }
+  };
+
+  return (
+    <div>
+      {state === 'start' && (
+        <AddTripButton addTrip={() => setState('add-trip') } />
+      )}
+
+      {state === 'add-trip' && <AnotherComponent />}
+      <Navbar/>
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-6xl">Menu</h1>
+        <Link href="https://orders.cake.net/11333695">
+          <button className="my-10 rounded-md bg-emerald-800 px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Order Now!
+          </button>
+        </Link>
+      </div>
+      <MenuNav toggleMenu={triggerToggleMenuState}/>
+      <div className="flex flex-col justify-center items-center">
         <Link href="/menu.pdf">
-                <button className="rounded-md bg-emerald-800 my-12 px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >PDF Menu</button>
-                </Link>
-                </div>
-        <Footer/>
-        </div>
-    );
+          <button className="rounded-md bg-emerald-800 my-12 px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            PDF Menu
+          </button>
+        </Link>
+      </div>
+      <Footer/>
+    </div>
+  );
 }
