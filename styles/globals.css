@@ -77,32 +77,6 @@ body {
   height: 400px;
   width: auto;
 }
-.menuSection {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 50px; /* Adjust padding as needed */
-}
-
-.book {
-  background-color: #fff;
-  width: 75%; /* Adjust based on your layout preference */
-  height: 900px; /* Fixed height, remove padding-top if not using for aspect ratio */
-  position: relative; /* For absolute positioning of children */
-  overflow: hidden; /* Keep everything contained */
-}
-
-.page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: contain; /* Or cover, depending on your preference */
-  background-repeat: no-repeat;
-  background-position: center center; /* Center the background image */
-}
 
 .instacontainer {
   position: relative;

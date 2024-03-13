@@ -1,12 +1,9 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import MenuBook from "@/components/MenuBook"; // Assuming MenuBook is used somewhere else or remove if not used
 import { useState } from "react";
+import NewMenu from "@/components/NewMenu";
 
-// Ensure AddTripButton and AnotherComponent are imported if they are used
-// import AddTripButton from "path_to_AddTripButton";
-// import AnotherComponent from "path_to_AnotherComponent";
 
 export default function Menu() {
   const [state, setState] = useState('start');
@@ -21,11 +18,7 @@ export default function Menu() {
 
   return (
     <div>
-      {state === 'start' && (
-        <AddTripButton addTrip={() => setState('add-trip') } />
-      )}
-
-      {state === 'add-trip' && <AnotherComponent />}
+     
       <Navbar/>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-6xl">Menu</h1>
@@ -35,7 +28,7 @@ export default function Menu() {
           </button>
         </Link>
       </div>
-      <MenuNav toggleMenu={triggerToggleMenuState}/>
+      <NewMenu />
       <div className="flex flex-col justify-center items-center">
         <Link href="/menu.pdf">
           <button className="rounded-md bg-emerald-800 my-12 px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
