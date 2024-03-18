@@ -1,27 +1,34 @@
-import React, { ComponentType, useState } from 'react';
-import LD from '@/components/LD';
-import Breakfast from '@/components/Breakfast';
+import React, { ComponentType, useState } from "react";
+import LD from "@/components/LD";
+import Breakfast from "@/components/Breakfast";
 const ParentComponent = () => {
-const [activeComponent, setActiveComponent] = useState('')
+  const [activeComponent, setActiveComponent] = useState("");
 
-const renderComponent = () => {
+  const renderComponent = () => {
     switch (activeComponent) {
-        case 'A':
-            return <Breakfast />;
-        case 'B':
-            return <LD />;
-   
-        default:
-            return <div>Select a component</div>;
+      case "A":
+        return <Breakfast />;
+      case "B":
+        return <LD />;
     }
-};
+  };
 
   return (
     <div>
-        <div >
-      <button onClick={() => setActiveComponent('A')}>Load Component A</button>
+      <div className="flex justify-center items-center">
+        <ul className="flex gap-10">
+          <li>
+            {" "}
+            <button onClick={() => setActiveComponent("A")}>Breakfast </button>
+          </li>
+          <li>
+            {" "}
+            <button onClick={() => setActiveComponent("B")}>
+              Lunch & Dinner{" "}
+            </button>
+          </li>
+        </ul>
       </div>
-      <button onClick={() => setActiveComponent('B')}>Load Component B</button>
       <div>{renderComponent()}</div>
     </div>
   );
