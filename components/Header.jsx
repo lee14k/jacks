@@ -41,6 +41,7 @@ const Header = () => {
               mouthwatering breakfasts to hearty lunches and hand-smoked BBQ and
               dinners, we take pride in offering dishes made with love.
             </p>
+            <Image src="/cinnamon.jpeg" height={400} width={800} />
           </div>
         </div>
       </div>
