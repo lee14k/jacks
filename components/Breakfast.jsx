@@ -199,13 +199,13 @@ const Breakfast = () => {
   ];
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <h1 className="text-6xl">Breakfast</h1>
       <div>
         {bfastone.map((bfastone, index) => (
-          <div key={index} className="">
+          <div key={index} className="flex flex-col justify-center items-center">
             <div>
-              <h2>{bfastone.header}</h2>
+              <h2 className="text-2xl">{bfastone.header}</h2>
             </div>
             <div>
               <p>{bfastone.body}</p>
