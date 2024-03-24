@@ -193,17 +193,17 @@ const Breakfast = () => {
     },
     {
       header: "Scrambled Egg Beaters",
-      body: "With toast.  With your choice ham, bacon, canadian bacon, sausage links, or sausage patties.  With your choice ham, bacon, canadian bacon, sausage links, or sausage patties.  With your choice ham, bacon, canadian bacon, sausage links, or sausage patties.  With your choice ham, bacon, canadian bacon, sausage links, or sausage patties.",
+      body: "With toast.  With your choice ham, bacon, canadian bacon, sausage links, or sausage patties. ",
       price: "6.59",
     },
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div>
       <h1 className="text-6xl">Breakfast</h1>
-      <div>
+      <div className="grid grid-cols-3 gap-12">
         {bfastone.map((bfastone, index) => (
-          <div key={index} className="flex flex-col justify-center items-center">
+          <div key={index} className="grid">
             <div>
               <h2 className="text-2xl">{bfastone.header}</h2>
             </div>
