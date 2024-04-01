@@ -74,9 +74,10 @@ const Breakfast = () => {
       header: "The Legend Country Fried Steak",
       body: "Country fried steak golden brown served with two eggs, hash browns, and choice of toast.",
       price: "$14.99",
-    },]
+    },
+  ];
 
-    const omelettes=[
+  const omelettes = [
     {
       header: "Wood Cutter",
       body: "Ham, mushroom, onion, green pepper, hash browns, and cheese blend.",
@@ -123,8 +124,8 @@ const Breakfast = () => {
       ],
       price: null,
     },
-  ]
-  const skillets=[
+  ];
+  const skillets = [
     {
       header: "Timberman's",
       body: "Grilled ham, hash browns, onion, and green pepper, topped with two eggs and smothered with cheese sauce. Served with toast.",
@@ -145,8 +146,8 @@ const Breakfast = () => {
       body: "Hearty skillet of polish sausage, crisp hash browns, green pepper and onion, topped with two eggs. Served with toast.",
       price: "$12.99",
     },
-  ]
-  const everyday=[
+  ];
+  const everyday = [
     {
       header: "Biscuits and Gravy",
       body: "Two homemade buttermilk biscuits, split, grilled, and topped with homemade sausage gravy.",
@@ -197,109 +198,109 @@ const Breakfast = () => {
     },
   ];
 
-const bsides = [
-  {
-    header: "Meats",
-    body: "Ham, Canadian bacon, bacon, sausage patty, or sausage link",
-    price: "$3.99",
-  },
-  {
-    header: "Sausage Gravy",
-    body: "",
-    price: "$2.99",
-  },
-  {
-    header: "Hash Browns or American Fries",
-    body: "",
-    price: "$2.99",
-  },
-  {
-    header: "Sweet Roll",
-    body: "",
-    price: "$5.99",
-  },
-  {
-    header: "Cinnamon Swirl Toast",
-    body: "",
-    price: "$2.29",
-  },
-  {
-    header: "English Muffin or Biscuit",
-    body: "",
-    price: "$2.29",
-  },
-  {
-    header: "Homemade Toast",
-    body: "",
-    price: "$2.29",
-  },
-]
+  const bsides = [
+    {
+      header: "Meats",
+      body: "Ham, Canadian bacon, bacon, sausage patty, or sausage link",
+      price: "$3.99",
+    },
+    {
+      header: "Sausage Gravy",
+      body: "",
+      price: "$2.99",
+    },
+    {
+      header: "Hash Browns or American Fries",
+      body: "",
+      price: "$2.99",
+    },
+    {
+      header: "Sweet Roll",
+      body: "",
+      price: "$5.99",
+    },
+    {
+      header: "Cinnamon Swirl Toast",
+      body: "",
+      price: "$2.29",
+    },
+    {
+      header: "English Muffin or Biscuit",
+      body: "",
+      price: "$2.29",
+    },
+    {
+      header: "Homemade Toast",
+      body: "",
+      price: "$2.29",
+    },
+  ];
 
-const sdrinks=[
-  {
-    header: "Coke, Diet Coke, Mello Yello, Sprite, Cherry Coke, Dr. Pepper",
-    body: "",
-    price: "$2.79",
-  },
-  {
-    header: "Fresh Brewed Iced Tea",
-    body: "Plain or Raspberry",
-    price: "$2.79",
-  },
-  {
-    header: "Lemonade",
-    body: "",
-    price: "$2.79",
-  },
-  {
-    header: "Apple, Cranberry, Orange, Tomato",
-    body: "",
-    price: "$2.79",
-  },
-  {
-    header: "Coffee",
-    body: "Fresh Brewed Classic Roast",
-    price: "$2.79",
-  },
-  {
-    header: "Hot Tea",
-    body: "",
-    price: "$2.20",
-  },
-  {
-    header: "Hot Chocolate",
-    body: "",
-    price: "$2.89",
-  },
-]
+  const sdrinks = [
+    {
+      header: "Coke, Diet Coke, Mello Yello, Sprite, Cherry Coke, Dr. Pepper",
+      body: "",
+      price: "$2.79",
+    },
+    {
+      header: "Fresh Brewed Iced Tea",
+      body: "Plain or Raspberry",
+      price: "$2.79",
+    },
+    {
+      header: "Lemonade",
+      body: "",
+      price: "$2.79",
+    },
+    {
+      header: "Apple, Cranberry, Orange, Tomato",
+      body: "",
+      price: "$2.79",
+    },
+    {
+      header: "Coffee",
+      body: "Fresh Brewed Classic Roast",
+      price: "$2.79",
+    },
+    {
+      header: "Hot Tea",
+      body: "",
+      price: "$2.20",
+    },
+    {
+      header: "Hot Chocolate ",
+      body: "",
+      price: "$2.89",
+    },
+  ];
 
-const kids=[
-  {
-    header: "Two Pearl Sugar Waffles",
-    body: "With syrup and butter",
-    price: "$8.99",
-  },
-  {
-    header: "Two Pearl Sugar Waffles",
-    body: "With syrup and butter",
-    price: "$8.99",
-  },
-  {
-    header: "Two Pearl Sugar Waffles",
-    body: "With syrup and butter",
-    price: "$8.99",
-  },
-  {
-    header: "Two Pearl Sugar Waffles",
-    body: "With syrup and butter",
-    price: "$8.99",
-  },
-  {
-    header: "Two Pearl Sugar Waffles",
-    body: "With syrup and butter",
-    price: "$8.99",
-  },
-]
+  const kids = [
+    {
+      header: "1 Chocolate Chip Pancake $2.59",
+      body: "Add 2 sausage links or 2 slices of bacon",
+      price: "$4.59",
+    },
+    {
+      header: "1 Pancake $2.25",
+      body: "Add 2 sausage links or 2 slices of bacon",
+      price: "$4.59",
+    },
+    {
+      header: "One French Toast $2.25",
+      body: "Add 2 sausage links or 2 slices of bacon",
+      price: "$4.59",
+    },
+    {
+      header: "One Waffle $3.69",
+      body: "Add strawberries and whipped cream",
+      price: "$5.98",
+    },
+    {
+      header: "1 egg, 1 meat, 1 toast",
+      body: "",
+      price: "$4.29",
+    },
+  ];
   return (
     <div>
       <h1 className="text-6xl">Breakfast</h1>
