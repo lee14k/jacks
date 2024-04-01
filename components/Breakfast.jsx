@@ -141,6 +141,30 @@ const Breakfast = () => {
       body: "Hearty skillet of polish sausage, crisp hash browns, green pepper and onion, topped with two eggs. Served with toast.",
       price: "11.99",
     },
+
+    {
+      header: "Biscuits and Gravy",
+      body: "Two homemade buttermilk biscuits, split, grilled, and topped with homemade sausage gravy. . | Half Order",
+      price: "9.89",
+    },
+    {
+      header: "Oatmeal or Cream of Wheat",
+      body: "Served with brown sugar and milk. Add raisins  Cup  | Bowl .",
+      price: "0.60",
+    },
+    {
+      header: "Egg and Toast 3.29",
+      body: "Add your choice ham, bacon, Canadian bacon, sausage links, or sausage patties.  * Two eggs for  more",
+      price: "7.29",
+    },
+    {
+      header: "Scrambled Egg Beaters",
+      body: "With toast.  With your choice ham, bacon, canadian bacon, sausage links, or sausage patties. ",
+      price: "6.59",
+    },
+  ];
+
+  const bfasttwo = [
     {
       header: "Two Griddle Cakes 4.39",
       body: "With your choice ham, bacon, canadian bacon, sausage links, or sausage patties.",
@@ -176,26 +200,6 @@ const Breakfast = () => {
       body: "With syrup and butter.",
       price: "8.29",
     },
-    {
-      header: "Biscuits and Gravy",
-      body: "Two homemade buttermilk biscuits, split, grilled, and topped with homemade sausage gravy. . | Half Order",
-      price: "9.89",
-    },
-    {
-      header: "Oatmeal or Cream of Wheat",
-      body: "Served with brown sugar and milk. Add raisins  Cup  | Bowl .",
-      price: "0.60",
-    },
-    {
-      header: "Egg and Toast 3.29",
-      body: "Add your choice ham, bacon, Canadian bacon, sausage links, or sausage patties.  * Two eggs for  more",
-      price: "7.29",
-    },
-    {
-      header: "Scrambled Egg Beaters",
-      body: "With toast.  With your choice ham, bacon, canadian bacon, sausage links, or sausage patties. ",
-      price: "6.59",
-    },
   ];
 
   return (
@@ -216,6 +220,21 @@ const Breakfast = () => {
           </div>
         ))}
       </div>
+      <h1 className="text-4xl my-10">Cakes and French Toasts</h1>
+
+      {bfasttwo.map((bfastone, index) => (
+        <div key={index} className="grid">
+          <div>
+            <h2 className="text-2xl">{bfastone.header}</h2>
+          </div>
+          <div>
+            <p>{bfastone.body}</p>
+          </div>
+          <div>
+            <p>{bfastone.price}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
