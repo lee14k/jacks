@@ -8,17 +8,10 @@ import NewMenu from "@/components/NewMenu";
 export default function Menu() {
   const [state, setState] = useState('start');
 
-  const triggerToggleMenuState = () => {
-    if (state === 'start') {
-      setState('add-trip');
-    } else {
-      setState('start');
-    }
-  };
-
   return (
     <div>
-     
+     <p>Our homestyle meals are made from scratch and served with old-fashioned friendly service. Our in-house baker makes fresh bread, rolls, pies, and cookies as well as our world famous cinnamon rolls</p>
+     <p>We are committed to our community and family atmosphere. We are so glad you are here!</p>
       <Navbar/>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-6xl">Menu</h1>

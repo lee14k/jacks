@@ -2,74 +2,80 @@ const LD = () => {
   const lunch = [
     {
       header: "Soup of the Day or Chili",
-      body: "Fresh and homemade. Cup  | Bowl",
-      price: "4.99",
+      body: "Fresh and homemade. ",
+      price: "$4.99 Cup | $5.99 Bowl",
     },
     {
-      header: "Deep Fried Mac N Cheese",
+      header: "Deep Fried Mac & Cheese",
       body: "Triangles of mac & cheese, lightly breaded & deep fried to golden brown",
-      price: "6.99",
+      price: "$6.99",
     },
     {
       header: "Bread Sticks",
       body: "Filled with melted mozzarella and served with marinara sauce.",
-      price: "6.99",
+      price: "$6.99",
     },
     {
       header: "Mozzarella Sticks",
       body: "Fried to a golden brown and served with marinara sauce.",
-      price: "8.79",
+      price: "$8.79",
     },
     {
       header: "French Fried Portobellos",
       body: "Premium mushrooms deep fried golden with ranch dipping sauce.",
-      price: "8.99",
+      price: "$8.99",
     },
     {
       header: "Jalape\u00f1o Poppers",
       body: "Cream cheese and jalape\u00f1o deep fried and crunchy with just the right bite.",
-      price: "8.99",
+      price: "$8.99",
     },
     {
       header: "Basket of Onion Rings",
       body: "Sweet onion slices dipped in a light golden batter.",
-      price: "7.99",
+      price: "$8.99",
     },
+    {
+      header: "Wisconsin Cheese Curds",
+      body: "Creamy Wisconsin cheese curds, lightly breaded and deep fried to gooey perfection",
+      price: "$7.99",
+    },
+    {
+      header: "Can\u2019t Decide? Basket",
+      body: "Onion rings, 2 Mozzarella sticks, portabella mushrooms, cheese curds, and french fries.",
+      price: "$11.99",
+    },
+    {
+      header: "Wings",
+      body: "Tender deep fried chicken wings either tossed with your choice of smokin\u2019 hot sauce or garlic Parmesan or served with BBQ sauce, sweet and sour, or ranch dressing.",
+      price: "$14.99 Ten wings | $8.99 Five Wings",
+    },
+  ]
+
+
+    const salads=[
     {
       header: "Taco Salad",
       body: "Fresh lettuce topped with seasoned ground beef, cheese, taco chips, tomatoes, onions and black olives. Served in a crisp tortilla shell with salsa and sour cream.",
-      price: "13.99",
+      price: "$13.99",
     },
     {
       header: "Chef Salad",
       body: "Fresh lettuce, ham, turkey, Swiss and American cheese, eggs, tomatoes, onions, and croutons.  Small",
-      price: "12.99",
+      price: "$12.99 / Small $9.99",
     },
     {
       header: "Grilled Chicken Salad",
       body: "A sliced grilled chicken breast atop a bed of fresh lettuce, garnished with raw onion rings, tomatoes, black olives, and croutons.",
-      price: "11.99",
+      price: "$11.99",
     },
     {
       header: "Turkey Supreme",
       body: "A bed of fresh lettuce, diced turkey breast, tomato wedges, croutons, and cheddar cheese with both ranch and red French dressings.",
-      price: "11.99",
+      price: "$11.99",
     },
-    {
-      header: "Wings",
-      body: "Tender deep fried chicken wings either tossed with your choice of smokin\u2019 hot sauce or garlic Parmesan or served with BBQ sauce, sweet and sour, or ranch dressing. Ten wings  | Five Wings",
-      price: "14.99",
-    },
-    {
-      header: "Wisconsin Cheese Curds",
-      body: "Two eggs, two sausage links, or two strips of bacon, hash browns, and toast.",
-      price: "$10.49",
-    },
-    {
-      header: "Can\u2019t Decide? Basket",
-      body: "Onion rings,  Mozzarella sticks, portabella mushrooms, cheese curds, and french fries.",
-      price: "2",
-    },
+  ]
+  const hots=[
     {
       header: "Reuben",
       body: "Our most popular sandwich! Tender sliced slow roasted corned beef, melted Swiss cheese, fresh sauerkraut Thousand Island on grilled dark rye bread.",
@@ -174,7 +180,9 @@ const LD = () => {
       header: "Salad",
       body: "",
       price: "4.99",
-    },
+    },]
+
+    const burgers=[
     {
       header: "Hot Hamburger",
       body: "/lb hamburger on a bun with mashed potatoes or french fries, covered with gravy.  Chicken tenders on your choice of grilled homemade bread, bacon, Swiss, and American with Ranch dressing.",
@@ -211,6 +219,24 @@ const LD = () => {
       price: "1",
     },
     {
+      header: "Double Double",
+      body: "Two / lb patties and two slices of American cheese.",
+      price: "1",
+    },
+    {
+      header: "Bacon Cheeseburger",
+      body: "Supreme / lb patty, two slices of American cheese, bacon, lettuce, tomato, onion, and mayo on the side.",
+      price: "1",
+    },
+    {
+      header: "Lumberjack",
+      body: "/ lb patty with lettuce, tomato, and Jack Sauce.",
+      price: "1",
+    },
+  ]
+
+    const wraps=[
+    {
       header: "Chicken Tender Basket",
       body: "Served with choice of potato and today\u2019s salad or tossed salad, with BBQ, ranch, sweet and sour or honey mustard for dipping. () , Half Order",
       price: "4",
@@ -234,22 +260,9 @@ const LD = () => {
       header: "Tuscan Chicken Wrap",
       body: "Sliced grilled chicken with lettuce, tomato, onions, and cheese wrapped in a grilled tortilla with southwest dressing",
       price: "11.99",
-    },
-    {
-      header: "Double Double",
-      body: "Two / lb patties and two slices of American cheese.",
-      price: "1",
-    },
-    {
-      header: "Bacon Cheeseburger",
-      body: "Supreme / lb patty, two slices of American cheese, bacon, lettuce, tomato, onion, and mayo on the side.",
-      price: "1",
-    },
-    {
-      header: "Lumberjack",
-      body: "/ lb patty with lettuce, tomato, and Jack Sauce.",
-      price: "1",
-    },
+    }
+  ]
+  const classics=[
     {
       header: "Roast Beef, Roast Pork,",
       body: [],
@@ -260,11 +273,7 @@ const LD = () => {
       body: "Slow roasted for tenderness.",
       price: "13.99",
     },
-    {
-      header: "Fresh Whitefish",
-      body: "/ lb patty, grilled mushrooms, and two slices of mozzarella cheese.",
-      price: "1",
-    },
+   
     {
       header: "Country Fried Steak",
       body: "Sirloin steak lightly breaded golden brown topped with homemade sausage gravy",
@@ -275,21 +284,7 @@ const LD = () => {
       body: "oz sirloin patty topped with grilled mushrooms",
       price: "10",
     },
-    {
-      header: "Grilled Citrus Salmon",
-      body: "/ lb patty, onion rings, bacon, BBQ sauce, shredded cheddar, and Monterey jack cheese.",
-      price: "1",
-    },
-    {
-      header: "Jumbo Shrimp",
-      body: "/ lb patty and a Brat patty with grilled onions, American and Swiss cheese, and Jack sauce.",
-      price: "1",
-    },
-    {
-      header: "Beer Battered Cod",
-      body: "/ lb patty with lettuce, tomato, onion, and pickle. . Make it a cheeseburger - add",
-      price: "1",
-    },
+  
     {
       header: "Fried Chicken",
       body: "Four pieces fresh cut chicken, hand- breaded in our house made seasoning mix, fried golden brown",
@@ -330,21 +325,7 @@ const LD = () => {
       body: "Tender liver smothered with grilled onions  With Bacon",
       price: "12.99",
     },
-    {
-      header: "Delicious Pie",
-      body: "Enjoy a piece of our homemade pie, baked daily.  A la mode",
-      price: "4.99",
-    },
-    {
-      header: "Pies to Go",
-      body: ["(Pre-order one day ahead)"],
-      price: null,
-    },
-    {
-      header: "Famous Rolls",
-      body: [],
-      price: null,
-    },
+  
     {
       header: "Logger\u2019s Special",
       body: "Two slices of French toast with whipped butter and three sausage links.",
@@ -381,6 +362,167 @@ const LD = () => {
       price: "10.49",
     },
   ];
+
+  const hook =[
+    {
+      header: "Fresh Whitefish",
+      body: "Large fillet deep fried to perfection, served with tartar sauce and lemon",
+      price: "$18.99",
+    },
+    {
+      header: "Grilled Citrus Salmon",
+      body: "Two lightly seasoned fillets grilled to perfection",
+      price: "$18.99 | One fillet $16.99",
+    },
+    {
+      header: "Jumbo Shrimp",
+      body: "Deep fried and served with cocktail sauce",
+      price: "$15.99",
+    },
+    {
+      header: "Beer Battered Cod",
+      body: "Crisp deep fried golden brown cod fillets",
+      price: "$14.99",
+    },
+  ]
+
+  const kidsdin =[
+    {
+      header: "Hamburger",
+      body: "",
+      price: "",
+    },
+    {
+      header: "Cheeseburger",
+      body: "",
+      price: "",
+    },
+    {
+      header: "Grilled Cheese Sandwich",
+      body: "",
+      price: "",
+    },
+    {
+      header: "Chicken Tenders",
+      body: "",
+      price: "",
+    },
+    {
+      header: "Hot Dog",
+      body: "",
+      price: "",
+    },
+  ]
+
+const drinkos=[
+  {
+    header: "Coke, Diet Coke, Mello Yello, Sprite, Cherry Coke, Dr. Pepper",
+    body: "",
+    price: "$2.79",
+  },
+  {
+    header: "Fresh Brewed Iced Tea",
+    body: "Plain or Raspberry",
+    price: "$2.79",
+  },
+  {
+    header: "Lemonade",
+    body: "",
+    price: "$2.79",
+  },
+  {
+    header: "Apple, Cranberry, Orange, Tomato",
+    body: "",
+    price: "$2.79",
+  },
+  {
+    header: "Coffee",
+    body: "Fresh Brewed Classic Roast",
+    price: "$2.79",
+  },
+  {
+    header: "Hot Tea",
+    body: "",
+    price: "$2.20",
+  },
+  {
+    header: "Hot Chocolate ",
+    body: "",
+    price: "$2.89",
+  },
+  {
+    header:"Beer",
+    body:"Ask your server",
+    price: "$3.39"
+  }
+]
+
+const sides=[
+  {
+    header: "Potato Chippers",
+    body: "",
+    price: "$3.99",
+  },
+  {
+    header: "French Fries",
+    body: "",
+    price: "$3.99",
+  },
+  {
+    header: "Baked Potato",
+    body: "",
+    price: "$3.99",
+  },
+  {
+    header: "Sweet Potato Waffle Fries",
+    body: "",
+    price: "$6.99",
+  },
+  {
+    header: "Basket of Fries or Chippers",
+    body: "",
+    price: "$4.99",
+  },
+  {
+    header: "Mashed Potatoes",
+    body: "",
+    price: "$2.99, add gravy for $1.00 more",
+  },
+  {
+    header: "Onion Rings",
+    body: "",
+    price: "$8.99",
+  },
+  {
+    header: "Tossed Salad",
+    body: "",
+    price: "$3.49",
+  },
+  {
+    header: "Cottage Cheese",
+    body: "",
+    price: "$3.59",
+  },
+]
+
+  const hdess = [
+    {
+      header: "Delicious Pie",
+      body: "Enjoy a piece of our homemade pie, baked daily.  A la mode",
+      price: "4.99",
+    },
+
+    {
+      header: "Famous Rolls",
+      body: [],
+      price: null,
+    },
+    {
+      header: "Pies to Go",
+      body: ["(Pre-order one day ahead)"],
+      price: null,
+    },
+  ]
 
   return (
     <div className="flex flex-col justify-center items-center">
