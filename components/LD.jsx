@@ -50,10 +50,9 @@ const LD = () => {
       body: "Tender deep fried chicken wings either tossed with your choice of smokin\u2019 hot sauce or garlic Parmesan or served with BBQ sauce, sweet and sour, or ranch dressing.",
       price: "$14.99 Ten wings | $8.99 Five Wings",
     },
-  ]
+  ];
 
-
-    const salads=[
+  const salads = [
     {
       header: "Taco Salad",
       body: "Fresh lettuce topped with seasoned ground beef, cheese, taco chips, tomatoes, onions and black olives. Served in a crisp tortilla shell with salsa and sour cream.",
@@ -74,168 +73,129 @@ const LD = () => {
       body: "A bed of fresh lettuce, diced turkey breast, tomato wedges, croutons, and cheddar cheese with both ranch and red French dressings.",
       price: "$11.99",
     },
-  ]
-  const hots=[
+  ];
+  const hots = [
     {
       header: "Reuben",
       body: "Our most popular sandwich! Tender sliced slow roasted corned beef, melted Swiss cheese, fresh sauerkraut Thousand Island on grilled dark rye bread.",
-      price: "11.99",
+      price: "$14.99",
     },
     {
       header: "Grilled Chicken Sandwich",
       body: "Griled chicken breast served with lettuce, tomato, and mayo on a bun.",
-      price: "10.89",
+      price: "$12.99",
     },
     {
       header: "Classic BLT",
       body: "Bacon, lettuce, tomato, and mayo on homemade toasted white, wheat, or rye.",
-      price: "9.59",
+      price: "$12.99",
     },
     {
       header: "Fresh Whitefish Sandwich",
       body: "A fresh whitefish fillet, lightly breaded, deep-fried and served on a bun with lettuce and tartar sauce",
-      price: "12.99",
+      price: "$15.99",
     },
     {
       header: "Quesadilla",
       body: "Grilled seasoned chicken or taco meat, onions, red and green peppers, cheddar and Monterey jack cheese on a grilled flour tortilla. Comes with sour cream and salsa.",
-      price: "11.99",
+      price: "$13.99",
     },
     {
       header: "Fish Sandwich",
       body: "Deep fried breaded cod with lettuce and tartar sauce served on a bun.",
-      price: "10.49",
+      price: "$13.49",
     },
     {
       header: "Stacked Turkey & Bacon",
       body: "Sliced turkey, crisp bacon, and American cheese with lettuce, tomato, and mayo served on a grilled sub bun.",
-      price: "11.99",
+      price: "$14.99",
     },
     {
       header: "Veggie Sandwich",
       body: "Swiss, lettuce, tomato, onion, green peppers, mushrooms, and sauce on grilled dark rye bread.",
-      price: "8.99",
+      price: "$11.99",
     },
     {
       header: "Hammy Sammy",
       body: "Ham, swiss, lettuce, tomato, and ranch dressing on choice of grilled bread.",
-      price: "11.99",
+      price: "$14.99",
     },
     {
       header: "Northwoods Hoagie",
-      body: "Grilled chopped steak with mushrooms, onions, and melted mozzarella cheese served on a  inch bun.",
-      price: "6",
+      body: "Grilled chopped steak with mushrooms, onions, and melted mozzarella cheese served on a six inch bun.",
+      price: "$14.99",
     },
     {
       header: "Cold Sandwiches",
       body: "Half sandwich and cup of soup.",
-      price: "8.69",
+      price: "$9.69",
     },
     {
       header: "Grilled Cheese Sandwich",
       body: "Three slices of American cheese on your choice of homemade bread and grilled to perfection.",
-      price: "5.99",
+      price: "$8.99",
     },
     {
       header: "Chicken Tender Melt",
-      body: [],
-      price: null,
+      body: "Chicken tenders on your choice of grilled homemade bread, baocn, swiss, and ameircan with ranch",
+      price: "$14.99",
     },
-    {
-      header: "Hot Beef, Turkey, or",
-      body: [],
-      price: null,
-    },
-    {
-      header: "Pork",
-      body: "Hot sandwich with mashed potatoes or french fries covered in gravy on white or wheat.  Half",
-      price: "11.99",
-    },
-    {
-      header: "Tuna",
-      body: [],
-      price: null,
-    },
-    {
-      header: "Salad",
-      body: "",
-      price: "7.99",
-    },
-    {
-      header: "Roast beef, turkey,",
-      body: [],
-      price: null,
-    },
-    {
-      header: "or pork",
-      body: "",
-      price: "8.79",
-    },
-    {
-      header: "Egg",
-      body: [],
-      price: null,
-    },
-    {
-      header: "Salad",
-      body: "",
-      price: "4.99",
-    },]
+  ];
 
-    const burgers=[
+  const burgers = [
     {
-      header: "Hot Hamburger",
-      body: "/lb hamburger on a bun with mashed potatoes or french fries, covered with gravy.  Chicken tenders on your choice of grilled homemade bread, bacon, Swiss, and American with Ranch dressing.",
-      price: "1",
+      header: "Hamburger",
+      body: "1/3 lb hamburger on a bun with mashed potatoes or french fries, covered with gravy.  Chicken tenders on your choice of grilled homemade bread, bacon, Swiss, and American with Ranch dressing.",
+      price: "$10.59",
     },
     {
       header: "Firehouse",
-      body: "/ lb patty with pepper-jack cheese, jalape\u00f1o, BBQ sauce, and topped with onion tanglers tossed in sriacha.",
-      price: "1",
+      body: "1/3 lb patty with pepper-jack cheese, jalape\u00f1o, BBQ sauce, and topped with onion tanglers tossed in sriacha.",
+      price: "$15.99",
     },
     {
       header: "M & M",
-      body: "/ lb patty, grilled mushrooms, and two slices of mozzarella cheese.",
-      price: "1",
+      body: "1/3 lb patty, grilled mushrooms, and two slices of mozzarella cheese.",
+      price: "$13.89",
     },
     {
       header: "Patty Melt",
-      body: "oz patty with Swiss and American cheese with saut\u00e9ed onions on grilled rye.",
-      price: "10",
+      body: "10oz patty with Swiss and American cheese with saut\u00e9ed onions on grilled rye.",
+      price: "$14.99",
     },
     {
       header: "Grilled Cheeseburger",
-      body: "Best of both worlds! / lb burger and cheese served on grilled white, wheat, or rye.",
-      price: "1",
+      body: "Best of both worlds! 1/3 lb burger and cheese served on grilled white, wheat, or rye.",
+      price: "$11.59",
     },
     {
       header: "Cowboy Burger",
-      body: "/ lb patty, onion rings, bacon, BBQ sauce, shredded cheddar, and Monterey jack cheese.  Bunyan Burger / lb patty and a Brat patty with grilled onions, American and Swiss cheese, and Jack sauce.",
-      price: "1",
-    },
-    {
-      header: "Hamburger",
-      body: "/ lb patty with lettuce, tomato, onion, and pickle. . Make it a cheeseburger - add",
-      price: "1",
+      body: "1/3 lb patty, onion rings, bacon, BBQ sauce, shredded cheddar, and Monterey jack cheese.",
+      price: "$14.99",
     },
     {
       header: "Double Double",
-      body: "Two / lb patties and two slices of American cheese.",
-      price: "1",
+      body: "Two 1/3 lb patties and two slices of American cheese.",
+      price: "$15.59",
     },
     {
       header: "Bacon Cheeseburger",
-      body: "Supreme / lb patty, two slices of American cheese, bacon, lettuce, tomato, onion, and mayo on the side.",
-      price: "1",
+      body: "Supreme 1/3 lb patty, two slices of American cheese, bacon, lettuce, tomato, onion, and mayo on the side.",
+      price: "$14.99",
     },
     {
       header: "Lumberjack",
-      body: "/ lb patty with lettuce, tomato, and Jack Sauce.",
-      price: "1",
+      body: "1/3 lb patty with lettuce, tomato, and Jack Sauce.",
+      price: "$13.99",
     },
-  ]
+    {
+      header: "Bunyan Burger",
+      body: "1/3 lb patty and a Brat patty with grilled onions, American and Swiss cheese, and Jack sauce.",
+      price: "$13.99",
+    },
+  ];
 
-    const wraps=[
+  const wraps = [
     {
       header: "Chicken Tender Basket",
       body: "Served with choice of potato and today\u2019s salad or tossed salad, with BBQ, ranch, sweet and sour or honey mustard for dipping. () , Half Order",
@@ -260,110 +220,69 @@ const LD = () => {
       header: "Tuscan Chicken Wrap",
       body: "Sliced grilled chicken with lettuce, tomato, onions, and cheese wrapped in a grilled tortilla with southwest dressing",
       price: "11.99",
-    }
-  ]
-  const classics=[
-    {
-      header: "Roast Beef, Roast Pork,",
-      body: [],
-      price: null,
     },
+  ];
+  const classics = [
     {
-      header: "or Roast Turkey",
+      header: "Roast Beef, Roast Pork, or Roast Turkey",
       body: "Slow roasted for tenderness.",
-      price: "13.99",
+      price: "$14.99",
     },
-   
+
     {
       header: "Country Fried Steak",
       body: "Sirloin steak lightly breaded golden brown topped with homemade sausage gravy",
-      price: "14.99",
+      price: "$14.99",
     },
     {
       header: "Beef and Mushroom Steak",
-      body: "oz sirloin patty topped with grilled mushrooms",
-      price: "10",
+      body: "10 oz sirloin patty topped with grilled mushrooms",
+      price: "$13.99",
     },
-  
+
     {
       header: "Fried Chicken",
       body: "Four pieces fresh cut chicken, hand- breaded in our house made seasoning mix, fried golden brown",
-      price: "14.99",
+      price: "$14.99",
     },
     {
       header: "Smothered Chicken Breast",
-      body: "oz grilled chicken breast topped with grilled onions, mushrooms, and melted mozzarella",
-      price: "6",
+      body: "6oz grilled chicken breast topped with grilled onions, mushrooms, and melted mozzarella",
+      price: "$13.99",
     },
     {
       header: "Chicken BBQ Bacon Skillet",
       body: "A grilled boneless chicken breast topped with crisp bacon strips, a cheddar-jack blend, lightly drizzled with BBQ sauce.",
-      price: "13.99",
+      price: "$13.99",
     },
     {
       header: "Polish Sausage & Kraut",
       body: "Served with choice of potato and today\u2019s salad or tossed salad with shrimp sauce.",
-      price: "12.99",
-    },
-    {
-      header: "Grilled Pork Chops",
-      body: "Two  oz tender chops  One chop",
-      price: "6",
-    },
-    {
-      header: "Top Sirloin Steak",
-      body: "oz hand cut strip steak prepared to your liking.",
-      price: "8",
-    },
-    {
-      header: "Steak and Shrimp",
-      body: "A  oz hand cut strip steak grilled to your liking, accompanied by six jumbo shrimp.",
-      price: "6",
-    },
-    {
-      header: "Liver & Onions",
-      body: "Tender liver smothered with grilled onions  With Bacon",
-      price: "12.99",
-    },
-  
-    {
-      header: "Logger\u2019s Special",
-      body: "Two slices of French toast with whipped butter and three sausage links.",
-      price: "8.79",
-    },
-    {
-      header: "Northern Eggs Benedict",
-      body: "Buttermilk biscuit split and topped with two eggs, Canadian bacon, and homemade sausage gravy.",
-      price: "10.99",
-    },
-    {
-      header: "Hunter\u2019s Special",
-      body: "Two eggs, two sausage patties, hash browns, and toast.",
-      price: "10.99",
-    },
-    {
-      header: "Northwoods Special",
-      body: "Two eggs, two sausage links, two strips of bacon, and a slice of ham. With hash browns and toast.",
       price: "$13.99",
     },
     {
-      header: "Biscuits and Gravy",
-      body: "Two homemade buttermilk biscuits, split, grilled, and topped with homemade sausage gravy. . | Half Order",
-      price: "9.89",
+      header: "Grilled Pork Chops",
+      body: "Two 6 oz tender chops | One chop $14.49",
+      price: "$16.99",
     },
     {
-      header: "Sausage Skillet",
-      body: "Golden hash browns topped with two sausage patties and two eggs covered with homemade sausage gravy. Served with toast.",
-      price: "11.99",
+      header: "Top Sirloin Steak",
+      body: "8 oz hand cut strip steak prepared to your liking.",
+      price: "$17.99",
     },
     {
-      header: "Camp Special",
-      body: "Two eggs, two sausage links, or two strips of bacon, hash browns, and toast.  Cinnamon Roll  Pecan Roll (Sundays only)",
-      price: "10.49",
+      header: "Steak and Shrimp",
+      body: "A 8 oz hand cut strip steak grilled to your liking, accompanied by six jumbo shrimp.",
+      price: "$19.99",
+    },
+    {
+      header: "Liver & Onions",
+      body: "Tender liver smothered with grilled onions | With Bacon $15.99",
+      price: "$12.99",
     },
   ];
 
-  const hook =[
+  const hook = [
     {
       header: "Fresh Whitefish",
       body: "Large fillet deep fried to perfection, served with tartar sauce and lemon",
@@ -384,9 +303,9 @@ const LD = () => {
       body: "Crisp deep fried golden brown cod fillets",
       price: "$14.99",
     },
-  ]
+  ];
 
-  const kidsdin =[
+  const kidsdin = [
     {
       header: "Hamburger",
       body: "",
@@ -412,98 +331,98 @@ const LD = () => {
       body: "",
       price: "",
     },
-  ]
+  ];
 
-const drinkos=[
-  {
-    header: "Coke, Diet Coke, Mello Yello, Sprite, Cherry Coke, Dr. Pepper",
-    body: "",
-    price: "$2.79",
-  },
-  {
-    header: "Fresh Brewed Iced Tea",
-    body: "Plain or Raspberry",
-    price: "$2.79",
-  },
-  {
-    header: "Lemonade",
-    body: "",
-    price: "$2.79",
-  },
-  {
-    header: "Apple, Cranberry, Orange, Tomato",
-    body: "",
-    price: "$2.79",
-  },
-  {
-    header: "Coffee",
-    body: "Fresh Brewed Classic Roast",
-    price: "$2.79",
-  },
-  {
-    header: "Hot Tea",
-    body: "",
-    price: "$2.20",
-  },
-  {
-    header: "Hot Chocolate ",
-    body: "",
-    price: "$2.89",
-  },
-  {
-    header:"Beer",
-    body:"Ask your server",
-    price: "$3.39"
-  }
-]
+  const drinkos = [
+    {
+      header: "Coke, Diet Coke, Mello Yello, Sprite, Cherry Coke, Dr. Pepper",
+      body: "",
+      price: "$2.79",
+    },
+    {
+      header: "Fresh Brewed Iced Tea",
+      body: "Plain or Raspberry",
+      price: "$2.79",
+    },
+    {
+      header: "Lemonade",
+      body: "",
+      price: "$2.79",
+    },
+    {
+      header: "Apple, Cranberry, Orange, Tomato",
+      body: "",
+      price: "$2.79",
+    },
+    {
+      header: "Coffee",
+      body: "Fresh Brewed Classic Roast",
+      price: "$2.79",
+    },
+    {
+      header: "Hot Tea",
+      body: "",
+      price: "$2.20",
+    },
+    {
+      header: "Hot Chocolate ",
+      body: "",
+      price: "$2.89",
+    },
+    {
+      header: "Beer",
+      body: "Ask your server",
+      price: "$3.39",
+    },
+  ];
 
-const sides=[
-  {
-    header: "Potato Chippers",
-    body: "",
-    price: "$3.99",
-  },
-  {
-    header: "French Fries",
-    body: "",
-    price: "$3.99",
-  },
-  {
-    header: "Baked Potato",
-    body: "",
-    price: "$3.99",
-  },
-  {
-    header: "Sweet Potato Waffle Fries",
-    body: "",
-    price: "$6.99",
-  },
-  {
-    header: "Basket of Fries or Chippers",
-    body: "",
-    price: "$4.99",
-  },
-  {
-    header: "Mashed Potatoes",
-    body: "",
-    price: "$2.99, add gravy for $1.00 more",
-  },
-  {
-    header: "Onion Rings",
-    body: "",
-    price: "$8.99",
-  },
-  {
-    header: "Tossed Salad",
-    body: "",
-    price: "$3.49",
-  },
-  {
-    header: "Cottage Cheese",
-    body: "",
-    price: "$3.59",
-  },
-]
+  const sides = [
+    {
+      header: "Potato Chippers",
+      body: "",
+      price: "$3.99",
+    },
+    {
+      header: "French Fries",
+      body: "",
+      price: "$3.99",
+    },
+    {
+      header: "Baked Potato",
+      body: "",
+      price: "$3.99",
+    },
+    {
+      header: "Sweet Potato Waffle Fries",
+      body: "",
+      price: "$6.99",
+    },
+    {
+      header: "Basket of Fries or Chippers",
+      body: "",
+      price: "$4.99",
+    },
+    {
+      header: "Mashed Potatoes",
+      body: "",
+      price: "$2.99, add gravy for $1.00 more",
+    },
+    {
+      header: "Onion Rings",
+      body: "",
+      price: "$8.99",
+    },
+    {
+      header: "Tossed Salad",
+      body: "",
+      price: "$3.49",
+    },
+    {
+      header: "Cottage Cheese",
+      body: "",
+      price: "$3.59",
+    },
+  ];
 
   const hdess = [
     {
@@ -522,7 +441,7 @@ const sides=[
       body: ["(Pre-order one day ahead)"],
       price: null,
     },
-  ]
+  ];
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -538,6 +457,20 @@ const sides=[
             <p>{item.price}</p>
           </div>
         ))}
+        lunch and dinner after 11am
+        <div>
+          Burgers come with your choice of soup, salad, fries, or chippers.
+          Sweet potato waffle fries add 1.99 / Onion rings add 3.25 Add ons:
+          American, Swiss, Mozzarella, pepper jack, mushrooms, bbq sauce, or
+          jalapenos - 1.00 each portobello mushrooms, onion rings, onion
+          tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or brat
+          patty 3.99 each
+        </div>
+        <div>
+          Cold Sandwiches tuna salad - 10.99 roast beef, turkey, pork 12.99
+          fries not included
+        </div>
+        sat night feature thing
       </div>
     </div>
   );
