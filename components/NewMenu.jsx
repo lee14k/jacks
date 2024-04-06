@@ -1,6 +1,7 @@
 import React, { ComponentType, useState } from "react";
 import LD from "@/components/LD";
 import Breakfast from "@/components/Breakfast";
+import BBQMenu from "@/components/BBQMenu";
 const ParentComponent = () => {
   const [activeComponent, setActiveComponent] = useState("");
 
@@ -10,6 +11,8 @@ const ParentComponent = () => {
         return <Breakfast />;
       case "B":
         return <LD />;
+        case "C":
+        return <BBQMenu />;
     }
   };
 
@@ -25,6 +28,10 @@ const ParentComponent = () => {
             {" "}
             <button onClick={() => setActiveComponent("B")}>
               Lunch & Dinner{" "}
+            </button>
+            {" "}
+            <button onClick={() => setActiveComponent("C")}>
+            BBQ{" "}
             </button>
           </li>
         </ul>

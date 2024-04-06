@@ -255,5 +255,5 @@ const BBQMenu = () => {
       </div>
     );
   };
-  export default Breakfast;
+  export default BBQMenu;
   
