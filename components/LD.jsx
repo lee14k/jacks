@@ -465,6 +465,39 @@ const LD = () => {
           jalapenos - 1.00 each portobello mushrooms, onion rings, onion
           tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or brat
           patty 3.99 each
+          {burgers.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center"
+          >
+            <h2 className="text-3xl">{item.header}</h2>
+            <p>{item.body}</p>
+            <p>{item.price}</p>
+          </div>
+        ))}
+        </div>
+        <div>
+          <h2>Wraps and Salads</h2>
+          {wraps.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center"
+          >
+            <h2 className="text-3xl">{item.header}</h2>
+            <p>{item.body}</p>
+            <p>{item.price}</p>
+          </div>
+        ))}
+         {salads.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center"
+          >
+            <h2 className="text-3xl">{item.header}</h2>
+            <p>{item.body}</p>
+            <p>{item.price}</p>
+          </div>
+        ))}
         </div>
         <div>
           Cold Sandwiches tuna salad - 10.99 roast beef, turkey, pork 12.99
