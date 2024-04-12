@@ -204,94 +204,103 @@ const BBQMenu = () => {
   ];
   return (
     <div>
-      <h1 className="text-6xl">Breakfast</h1>
+        <h1 className="text-6xl">BBQ </h1>
+        <div className="grid grid-cols-3 gap-12">
+          {bbqone.map((bbqone, index) => (
+            <div key={index} className="grid">
+              <div>
+                <h2 className="text-2xl">{bbqone.header}</h2>
+              </div>
+              <div>
+                <p>{bbqone.body}</p>
+              </div>
+              <div>
+                <p>{bbqone.price}</p>
+              </div>
+            </div>
+          ))}
+      </div>
+      <h1 className="text-4xl my-10">Cakes and French Toasts</h1>
       <div className="grid grid-cols-3 gap-12">
-        {bbqone.map((bbqone, index) => (
+        {bbqtwo.map((bbqtwo, index) => (
           <div key={index} className="grid">
             <div>
-              <h2 className="text-2xl">{bbqone.header}</h2>
+              <h2 className="text-2xl">{bbqtwo.header}</h2>
             </div>
             <div>
-              <p>{bbqone.body}</p>
+              <p>{bbqtwo.body}</p>
             </div>
             <div>
-              <p>{bbqone.price}</p>
+              <p>{bbqtwo.price}</p>
             </div>
           </div>
         ))}
       </div>
-      <h1 className="text-4xl my-10">Cakes and French Toasts</h1>
-
-      {bbqtwo.map((bbqtwo, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{bbqtwo.header}</h2>
+      <div className="grid grid-cols-3 gap-12">
+        {bbqthree.map((bbqthree, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{bbqthree.header}</h2>
+            </div>
+            <div>
+              <p>{bbqthree.body}</p>
+            </div>
+            <div>
+              <p>{bbqthree.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{bbqtwo.body}</p>
+        ))}
+      </div>
+      <div className="grid grid-cols-3 gap-12">
+        {bbqburgers.map((bbqburgers, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{bbqburgers.header}</h2>
+            </div>
+            <div>
+              <p>{bbqburgers.body}</p>
+            </div>
+            <div>
+              <p>{bbqburgers.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{bbqtwo.price}</p>
+        ))}
+      </div>
+      <div className="grid grid-cols-3 gap-12">
+        {backwoods.map((backwoods, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{backwoods.header}</h2>
+            </div>
+            <div>
+              <p>{backwoods.body}</p>
+            </div>
+            <div>
+              <p>{backwoods.price}</p>
+            </div>
           </div>
-        </div>
-      ))}
-      {bbqthree.map((bbqthree, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{bbqthree.header}</h2>
-          </div>
-          <div>
-            <p>{bbqthree.body}</p>
-          </div>
-          <div>
-            <p>{bbqthree.price}</p>
-          </div>
-        </div>
-      ))}
-      {bbqburgers.map((bbqburgers, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{bbqburgers.header}</h2>
-          </div>
-          <div>
-            <p>{bbqburgers.body}</p>
-          </div>
-          <div>
-            <p>{bbqburgers.price}</p>
-          </div>
-        </div>
-      ))}
-      {backwoods.map((backwoods, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{backwoods.header}</h2>
-          </div>
-          <div>
-            <p>{backwoods.body}</p>
-          </div>
-          <div>
-            <p>{backwoods.price}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
       <h2>Feed the Pack</h2>
       <p>
         Choose from beef brisket, maple glazed pulled pork, BBQ pork ribs,
         smoked chicken, honey smoked ham, smoked turkey, or burnt ends
       </p>
-      {pack.map((pack, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{pack.header}</h2>
+      <div className="grid grid-cols-3 gap-12">
+        {pack.map((pack, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{pack.header}</h2>
+            </div>
+            <div>
+              <p>{pack.body}</p>
+            </div>
+            <div>
+              <p>{pack.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{pack.body}</p>
-          </div>
-          <div>
-            <p>{pack.price}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
       {bbqdessert.map((bbqdessert, index) => (
         <div key={index} className="grid">
           <div>

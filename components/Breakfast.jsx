@@ -61,9 +61,9 @@ const Breakfast = () => {
       price: "$10.89",
     },
     {
-      header: "Cinnamon Roll 4.99",
+      header: "Cinnamon Roll",
       body: [],
-      price: null,
+      price: "4.99",
     },
     {
       header: "Pecan Roll (Sundays only)",
@@ -302,14 +302,13 @@ const Breakfast = () => {
     },
   ];
   return (
-    <div>
+    <div className="mx-16">
       <h1 className="text-6xl">Breakfast</h1>
       <h1 className="text-4xl my-10">Breakfast Specials</h1>
 
-      <div className="grid grid-cols-3 gap-12">
-
+      <div className="grid lg:grid-cols-3 gap-12">
         {bfastone.map((bfastone, index) => (
-          <div key={index} className="grid">
+          <div key={index} className="grid mx-12">
             <div>
               <h2 className="text-2xl">{bfastone.header}</h2>
             </div>
@@ -323,77 +322,87 @@ const Breakfast = () => {
         ))}
       </div>
       <h1 className="text-4xl my-10">Omelettes</h1>
-
-      {omelettes.map((omelettes, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{omelettes.header}</h2>
+      <div className="grid grid-cols-3 gap-12">
+        {omelettes.map((omelettes, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{omelettes.header}</h2>
+            </div>
+            <div>
+              <p>{omelettes.body}</p>
+            </div>
+            <div>
+              <p>{omelettes.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{omelettes.body}</p>
-          </div>
-          <div>
-            <p>{omelettes.price}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
       <h1 className="text-4xl my-10">Everyday Favorites</h1>
 
-      {everyday.map((everyday, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{everyday.header}</h2>
+      <div className="grid grid-cols-3 gap-12">
+        {everyday.map((everyday, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{everyday.header}</h2>
+            </div>
+            <div>
+              <p>{everyday.body}</p>
+            </div>
+            <div>
+              <p>{everyday.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{everyday.body}</p>
-          </div>
-          <div>
-            <p>{everyday.price}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
       <h1 className="text-4xl my-10">Cakes and French Toasts</h1>
-
-      {bfasttwo.map((bfastone, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{bfastone.header}</h2>
+      <div className="grid grid-cols-3 gap-12">
+        {bfasttwo.map((bfastone, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{bfastone.header}</h2>
+            </div>
+            <div>
+              <p>{bfastone.body}</p>
+            </div>
+            <div>
+              <p>{bfastone.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{bfastone.body}</p>
-          </div>
-          <div>
-            <p>{bfastone.price}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
       <h1 className="text-4xl my-10">Sides & Drinks</h1>
-      {bsides.map((bsides, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{bsides.header}</h2>
+      <div className="grid grid-cols-3 gap-12">
+        {bsides.map((bsides, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{bsides.header}</h2>
+            </div>
+            <div>
+              <p>{bsides.body}</p>
+            </div>
+            <div>
+              <p>{bsides.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{bsides.body}</p>
+        ))}
+      </div>
+      <h2>Drinks</h2>
+
+      <div className="grid grid-cols-3 gap-12">
+        {sdrinks.map((sdrinks, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{sdrinks.header}</h2>
+            </div>
+            <div>
+              <p>{sdrinks.body}</p>
+            </div>
+            <div>
+              <p>{sdrinks.price}</p>
+            </div>
           </div>
-          <div>
-            <p>{bsides.price}</p>
-          </div>
-        </div>
-      ))}
-      {sdrinks.map((sdrinks, index) => (
-        <div key={index} className="grid">
-          <div>
-            <h2 className="text-2xl">{sdrinks.header}</h2>
-          </div>
-          <div>
-            <p>{sdrinks.body}</p>
-          </div>
-          <div>
-            <p>{sdrinks.price}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

@@ -444,60 +444,74 @@ const LD = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1 className="text-6xl">Lunch and Dinner</h1>
+    <div className="flex flex-col justify-center items-center mx-16">
+      <h1 className="text-6xl my-6">Lunch and Dinner</h1>
       <div className="flex flex-col justify-center items-center">
-        {lunch.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center"
-          >
-            <h2 className="text-3xl">{item.header}</h2>
-            <p>{item.body}</p>
-            <p>{item.price}</p>
+        <h2 className="text-6xl my-6">Appetizers</h2>
+        <div className="grid grid-cols-3 gap-12">
+          {lunch.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center"
+            >
+              <h2 className="text-3xl">{item.header}</h2>
+              <p>{item.body}</p>
+              <p>{item.price}</p>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-6xl my-6">Burgers</h1>
+          <p className="mx-12 text-xl my-6">
+            {" "}
+            Burgers come with your choice of soup, salad, fries, or chippers.
+            Sweet potato waffle fries add 1.99 / Onion rings add 3.25 Add ons:
+            American, Swiss, Mozzarella, pepper jack, mushrooms, bbq sauce, or
+            jalapenos - 1.00 each portobello mushrooms, onion rings, onion
+            tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or
+            brat patty 3.99 each
+          </p>
+
+          <div className="grid grid-cols-3 gap-12">
+            {burgers.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col justify-center items-center"
+              >
+                <h2 className="text-3xl">{item.header}</h2>
+                <p>{item.body}</p>
+                <p>{item.price}</p>
+              </div>
+            ))}
           </div>
-        ))}
-        lunch and dinner after 11am
-        <div>
-          Burgers come with your choice of soup, salad, fries, or chippers.
-          Sweet potato waffle fries add 1.99 / Onion rings add 3.25 Add ons:
-          American, Swiss, Mozzarella, pepper jack, mushrooms, bbq sauce, or
-          jalapenos - 1.00 each portobello mushrooms, onion rings, onion
-          tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or brat
-          patty 3.99 each
-          {burgers.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center"
-          >
-            <h2 className="text-3xl">{item.header}</h2>
-            <p>{item.body}</p>
-            <p>{item.price}</p>
-          </div>
-        ))}
         </div>
         <div>
-          <h2>Wraps and Salads</h2>
-          {wraps.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center"
-          >
-            <h2 className="text-3xl">{item.header}</h2>
-            <p>{item.body}</p>
-            <p>{item.price}</p>
+          <h2 className="text-6xl my-6">Wraps and Salads</h2>
+
+          <div className="grid grid-cols-3 gap-12">
+            {wraps.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col justify-center items-center"
+              >
+                <h2 className="text-3xl">{item.header}</h2>
+                <p>{item.body}</p>
+                <p>{item.price}</p>
+              </div>
+            ))}
           </div>
-        ))}
-         {salads.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center"
-          >
-            <h2 className="text-3xl">{item.header}</h2>
-            <p>{item.body}</p>
-            <p>{item.price}</p>
+          <div className="grid grid-cols-3 gap-12">
+            {salads.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col justify-center items-center"
+              >
+                <h2 className="text-3xl">{item.header}</h2>
+                <p>{item.body}</p>
+                <p>{item.price}</p>
+              </div>
+            ))}
           </div>
-        ))}
         </div>
         <div>
           Cold Sandwiches tuna salad - 10.99 roast beef, turkey, pork 12.99
