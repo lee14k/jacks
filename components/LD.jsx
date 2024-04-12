@@ -485,7 +485,7 @@ const LD = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div className="flex flex-col justify-center items-center">
           <h2 className="text-6xl my-6">Wraps and Salads</h2>
 
           <div className="grid grid-cols-3 gap-12">

@@ -302,9 +302,10 @@ const Breakfast = () => {
     },
   ];
   return (
-    <div className="mx-16">
-      <h1 className="text-6xl">Breakfast</h1>
+    <div className="flex flex-col justify-center items-center mx-16">
+      <h1 className="text-6xl my-6">Breakfast</h1>
       <h1 className="text-4xl my-10">Breakfast Specials</h1>
+      <div className="flex flex-col justify-center items-center">
 
       <div className="grid lg:grid-cols-3 gap-12">
         {bfastone.map((bfastone, index) => (
@@ -404,6 +405,8 @@ const Breakfast = () => {
         ))}
       </div>
     </div>
+    </div>
+
   );
 };
 export default Breakfast;

@@ -203,25 +203,27 @@ const BBQMenu = () => {
     },
   ];
   return (
-    <div>
-        <h1 className="text-6xl">BBQ </h1>
-        <div className="grid grid-cols-3 gap-12">
-          {bbqone.map((bbqone, index) => (
-            <div key={index} className="grid">
-              <div>
-                <h2 className="text-2xl">{bbqone.header}</h2>
-              </div>
-              <div>
-                <p>{bbqone.body}</p>
-              </div>
-              <div>
-                <p>{bbqone.price}</p>
-              </div>
-            </div>
-          ))}
-      </div>
-      <h1 className="text-4xl my-10">Cakes and French Toasts</h1>
+    <div className="mx-16">
+      <h1 className="text-6xl">BBQ </h1>
+      <h1 className="text-6xl mt-10">Appetizers </h1>
+
       <div className="grid grid-cols-3 gap-12">
+        {bbqone.map((bbqone, index) => (
+          <div key={index} className="grid">
+            <div>
+              <h2 className="text-2xl">{bbqone.header}</h2>
+            </div>
+            <div>
+              <p>{bbqone.body}</p>
+            </div>
+            <div>
+              <p>{bbqone.price}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <h1 className="text-4xl mt-10">Cakes and French Toasts</h1>
+      <div className="grid grid-cols-3 gap-12 pb-12">
         {bbqtwo.map((bbqtwo, index) => (
           <div key={index} className="grid">
             <div>
@@ -236,6 +238,8 @@ const BBQMenu = () => {
           </div>
         ))}
       </div>
+      <h1 className="text-4xl mt-10">Cakes and French Toasts</h1>
+
       <div className="grid grid-cols-3 gap-12">
         {bbqthree.map((bbqthree, index) => (
           <div key={index} className="grid">
@@ -251,6 +255,8 @@ const BBQMenu = () => {
           </div>
         ))}
       </div>
+      <h1 className="text-4xl mt-10">Cakes and French Toasts</h1>
+
       <div className="grid grid-cols-3 gap-12">
         {bbqburgers.map((bbqburgers, index) => (
           <div key={index} className="grid">
@@ -266,6 +272,8 @@ const BBQMenu = () => {
           </div>
         ))}
       </div>
+      <h1 className="text-4xl mt-10">Sandwiches</h1>
+
       <div className="grid grid-cols-3 gap-12">
         {backwoods.map((backwoods, index) => (
           <div key={index} className="grid">
@@ -281,7 +289,7 @@ const BBQMenu = () => {
           </div>
         ))}
       </div>
-      <h2>Feed the Pack</h2>
+      <h1 className="text-4xl mt-10">Feed the Pack</h1>
       <p>
         Choose from beef brisket, maple glazed pulled pork, BBQ pork ribs,
         smoked chicken, honey smoked ham, smoked turkey, or burnt ends
@@ -301,6 +309,8 @@ const BBQMenu = () => {
           </div>
         ))}
       </div>
+      <h1 className="text-4xl mt-10">Desserts</h1>
+
       {bbqdessert.map((bbqdessert, index) => (
         <div key={index} className="grid">
           <div>
