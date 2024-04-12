@@ -31,17 +31,19 @@ const Header = () => {
           <div>
             <Image src="/signill.png" height={400} width={400} />
           </div>
-          <div className={merriweather.className}>
-            <h2 className="text-8xl">Hometown cooking</h2>
-            <h3 className="text-6xl">At the crossroads of the UP</h3>
-            <p className="text-xl text-pretty">
-              Welcome to Jack's, where family and flavor come together in the
-              heart of Rapid River! Our cozy diner-style restaurant has been
-              serving up delicious meals and warm smiles for generations. From
-              mouthwatering breakfasts to hearty lunches and hand-smoked BBQ and
-              dinners, we take pride in offering dishes made with love.
-            </p>
-            <Image src="/cinnamon.jpeg" height={400} width={800} />
+          <div className="flex flex-col">
+            <div className={merriweather.className}>
+              <h2 className="text-8xl">Hometown cooking</h2>
+              <h3 className="text-6xl">At the crossroads of the UP</h3>
+              <p className="text-xl text-pretty">
+                Welcome to Jack's, where family and flavor come together in the
+                heart of Rapid River! Our cozy diner-style restaurant has been
+                serving up delicious meals and warm smiles for generations. From
+                mouthwatering breakfasts to hearty lunches and hand-smoked BBQ
+                and dinners, we take pride in offering dishes made with love.
+              </p>
+              <div className="breadbg"></div>
+            </div>
           </div>
         </div>
       </div>

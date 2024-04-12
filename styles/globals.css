@@ -7,6 +7,13 @@ body {
   min-width: fit-content;
 }
 
+.breadbg {
+  background-image: url("/breads.jpeg");
+  background-size: cover;
+  height: 550px;
+  background-position: center;
+}
+
 .headercontainer {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/outsidejacks.jpg");
@@ -96,4 +103,3 @@ body {
   box-shadow: 0 8px 75px rgba(0, 0, 0, 0.35); /* Customize this to get the desired shadow effect */
   border-radius: inherit; /* If your container has rounded corners */
 }
-

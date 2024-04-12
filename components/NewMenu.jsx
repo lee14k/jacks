@@ -11,27 +11,40 @@ const ParentComponent = () => {
         return <Breakfast />;
       case "B":
         return <LD />;
-        case "C":
+      case "C":
         return <BBQMenu />;
     }
   };
 
   return (
     <div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center gap-12">
         <ul className="flex gap-10">
           <li>
             {" "}
-            <button onClick={() => setActiveComponent("A")} className="">Breakfast </button>
+            <button
+              onClick={() => setActiveComponent("A")}
+              className="bg-emerald-950 py-2 px-4 text-white text-xl"
+            >
+              Breakfast{" "}
+            </button>
           </li>
           <li>
             {" "}
-            <button onClick={() => setActiveComponent("B")}>
+            <button
+              onClick={() => setActiveComponent("B")}
+              className="bg-emerald-950 py-2 px-4 text-white text-xl"
+            >
               Lunch & Dinner{" "}
-            </button>
-            {" "}
-            <button onClick={() => setActiveComponent("C")}>
-            BBQ{" "}
+            </button>{" "}
+            </li>
+
+            <li>
+            <button
+              onClick={() => setActiveComponent("C")}
+              className="bg-emerald-950 py-2 px-4 text-white text-xl"
+            >
+              BBQ{" "}
             </button>
           </li>
         </ul>
