@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: false },
-  { href: "/none", current: false, img: "/greenjacks.png" },
+  { href: "/none", current: false, img: "/newjacksb.png" },
 
   { name: "Menu", href: "/menu", current: false },
   { name: "Contact", href: "/contact", current: false },
@@ -32,7 +32,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 my-16">
-            <div className="relative flex h-16 items-center justify-evenly">
+            <div className="relative flex h-16 items-center justify-center">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-evenly justify-center p-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -44,10 +44,10 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center">
                 <div className="flex-shrink-0 flex items-center"></div>
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 justify-center items-center">
                     {updatedNavigation.map((item) => (
                       <Link key={item.name} href={item.href} passHref>
                         <div
