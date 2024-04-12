@@ -22,7 +22,7 @@ const ParentComponent = () => {
         <ul className="flex gap-10">
           <li>
             {" "}
-            <button onClick={() => setActiveComponent("A")}>Breakfast </button>
+            <button onClick={() => setActiveComponent("A")} className="">Breakfast </button>
           </li>
           <li>
             {" "}
