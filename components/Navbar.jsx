@@ -28,10 +28,10 @@ export default function Navbar() {
   }));
 
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav" className="headerbg">
       {({ open }) => (
-        <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 my-16">
+        <div className="headerbg ">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-16">
             <div className="relative flex h-16 items-center justify-center">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -55,7 +55,7 @@ export default function Navbar() {
                             item.current
                               ? "bg-gray-900 text-white"
                               : "hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-medium flex items-center cursor-pointer"
+                            "px-3 py-2 rounded-md text-2xl font-medium flex items-center cursor-pointer"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
@@ -104,7 +104,7 @@ export default function Navbar() {
               ))}
             </div>
           </Disclosure.Panel>
-        </>
+        </div>
       )}
     </Disclosure>
   );
