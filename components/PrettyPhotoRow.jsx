@@ -7,7 +7,7 @@ const PrettyPhotoRow = ({ images, headline }) => {
         </div>
       ))}
       <div className="gradient-overlay"></div> {/* Gradient overlay */}
-      <div className="overlay-headline text-8xl">{headline}</div>
+      <div className="overlay-headline lg:text-8xl text-2xl">{headline}</div>
     </div>
   );
 };

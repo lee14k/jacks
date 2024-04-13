@@ -67,7 +67,7 @@ export default function Navbar() {
                               <img
                                 src={item.img}
                                 alt={item.name}
-                                className="mr-2 h-36 w-40"
+                                className="mr-2 h-auto lg:w-48"
                               />
                             )}
                             {item.name}
