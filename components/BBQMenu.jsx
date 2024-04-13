@@ -203,7 +203,7 @@ const BBQMenu = () => {
     },
   ];
   return (
-    <div className="mx-16">
+    <div className="mx-16 menucontainer">
       <h1 className="text-6xl">BBQ </h1>
       <h1 className="text-6xl mt-10">Appetizers </h1>
 

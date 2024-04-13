@@ -161,3 +161,22 @@ body {
   box-shadow: 0 8px 75px rgba(0, 0, 0, 0.35); /* Customize this to get the desired shadow effect */
   border-radius: inherit; /* If your container has rounded corners */
 }
+
+.menucontainer {
+  position: relative;
+  border: 30px solid transparent;
+  border-image: url("/rw.png") 25 round;
+  box-shadow: inset 10p 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.menucontainer::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Extend beyond the container to avoid clipping the shadow */
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  box-shadow: 0 8px 75px rgba(0, 0, 0, 0.35); /* Customize this to get the desired shadow effect */
+  border-radius: inherit; /* If your container has rounded corners */
+}

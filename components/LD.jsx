@@ -444,7 +444,7 @@ const LD = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center mx-16">
+    <div className="flex flex-col justify-center items-center mx-16 menucontainer">
       <h1 className="text-6xl my-6">Lunch and Dinner</h1>
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-6xl my-6">Appetizers</h2>
