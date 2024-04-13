@@ -304,7 +304,7 @@ const Breakfast = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center mx-16">
+    <div className="flex flex-col justify-center items-center mx-16 instacontainer">
       <h1 className="text-6xl my-6">Breakfast</h1>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-4xl my-10">Breakfast Specials</h1>

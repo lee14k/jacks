@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import PrettyPhotoRow from "./PrettyPhotoRow";
 import { Rubik_Doodle_Shadow } from "next/font/google";
 const rubik = Rubik_Doodle_Shadow({ weight: "400", subsets: ["latin"] });
 import { Cedarville_Cursive } from "next/font/google";
@@ -9,6 +10,8 @@ import { Merriweather } from "next/font/google";
 
 const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 const Header = () => {
+  const headline = "Welcome to Jack's"; // The headline that overlays the images
+  const homeImages = ["/breads.jpeg", "/bbq.jpeg", "/pie.jpeg"];
   return (
     <div className>
       <div className="headercontainer flex flex-col justify-center items-center w-lvw">
@@ -18,14 +21,16 @@ const Header = () => {
           width={600}
           className="signicon"
         />
-        <div className="my-12">
+        <div className="my-24">
           <Link href="https://orders.cake.net/11333695">
-            <button className="rounded-md bg-emerald-800 px-3.5 py-2.5 text-2xl font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            <button className="bg-emerald-950 px-12 py-2.5 text-4xl font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
               Order Now!
             </button>
           </Link>
         </div>
       </div>
+      <PrettyPhotoRow images={homeImages} headline={headline} />
+
       <div className="flex justify-center items-center text-center ">
         <div className="mx-48 my-32 grid grid-cols-2 ">
           <div>
@@ -38,8 +43,7 @@ const Header = () => {
                 <h2 className="text-6xl">Hometown cooking</h2>
                 <Image src="/jacksborder.png" height={400} width={400} />
                 <p className="text-xl text-pretty">
-                  Welcome to Jack's, where family and flavor come together in
-                  the heart of Rapid River! Our cozy diner-style restaurant has
+                Our cozy diner-style restaurant has
                   been serving up delicious meals and warm smiles for
                   generations. From mouthwatering breakfasts to hearty lunches
                   and hand-smoked BBQ and dinners, we take pride in offering

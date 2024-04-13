@@ -10,7 +10,7 @@ import { Merriweather } from "next/font/google";
 const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 const PhotoRow = () => {
   return (
-    <div className="photorowbg flex flex-col justify-center items-center gap-4 py-24 text-white">
+    <div className="photorowbg flex flex-col justify-center items-center gap-4 py-24 ">
       <div className="grid grid-col-1 sm:grid-cols-3 gap-14">
         <div className="text-4xl flex flex-col justify-center items-center font-bold ">
           <Image src="/rib.png" height={300} width={300} className="rounded" />

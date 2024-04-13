@@ -3,6 +3,9 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Merriweather } from "next/font/google";
+
+const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 
 // Initial navigation array
 const navigation = [
@@ -28,7 +31,7 @@ export default function Navbar() {
   }));
 
   return (
-    <Disclosure as="nav" className="headerbg">
+    <Disclosure as="nav" className="">
       {({ open }) => (
         <div className="headerbg ">
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-16">
@@ -50,23 +53,25 @@ export default function Navbar() {
                   <div className="flex space-x-4 justify-center items-center">
                     {updatedNavigation.map((item) => (
                       <Link key={item.name} href={item.href} passHref>
-                        <div
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-2xl font-medium flex items-center cursor-pointer"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.img && (
-                            <img
-                              src={item.img}
-                              alt={item.name}
-                              className="mr-2 h-36 w-40"
-                            />
-                          )}
-                          {item.name}
+                        <div className={merriweather.className}>
+                          <div
+                            className={classNames(
+                              item.current
+                                ? "bg-gray-900 text-white"
+                                : "hover:bg-gray-700 hover:text-white",
+                              "px-3 py-2 rounded-md text-2xl font-medium flex items-center cursor-pointer"
+                            )}
+                            aria-current={item.current ? "page" : undefined}
+                          >
+                            {item.img && (
+                              <img
+                                src={item.img}
+                                alt={item.name}
+                                className="mr-2 h-36 w-40"
+                              />
+                            )}
+                            {item.name}
+                          </div>
                         </div>
                       </Link>
                     ))}
