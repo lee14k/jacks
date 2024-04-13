@@ -93,11 +93,9 @@ const Breakfast = () => {
       body: "Tomato, onion, green pepper, mushroom, and cheese blend.",
       price: "$10.99",
     },
-    {
-      header: "Build your own omelette",
-      body: "Starting with three eggs and our cheese blend.",
-      price: "$9.79",
-    },
+  ];
+
+  const build = [
     {
       header: "ADD CHEESE  $0.99 each",
       body: [
@@ -125,8 +123,6 @@ const Breakfast = () => {
       price: null,
     },
   ];
-
-  const build = [];
   const skillets = [
     {
       header: "Timberman's",
@@ -308,7 +304,7 @@ const Breakfast = () => {
       <div className="mx-12  flex flex-col justify-center items-center">
         <h1 className="text-6xl my-6">Breakfast</h1>
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-4xl my-10">Breakfast Specials</h1>
+          <h1 className="text-6xl my-10">Breakfast Specials</h1>
 
           <div className="grid lg:grid-cols-3 gap-12">
             {bfastone.map((bfastone, index) => (
@@ -326,7 +322,7 @@ const Breakfast = () => {
             ))}
           </div>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="text-4xl my-10">Omelettes</h1>
+            <h1 className="text-6xl my-10">Omelettes</h1>
             <div className="grid grid-cols-3 gap-12">
               {omelettes.map((omelettes, index) => (
                 <div key={index} className="grid">
@@ -343,7 +339,27 @@ const Breakfast = () => {
               ))}
             </div>
           </div>
-          <h1 className="text-4xl my-10">Everyday Favorites</h1>
+          <div className="flex gap-2">
+            <h1 className="text-4xl">Build your own omelette</h1> <span>$9.79</span>
+          </div>
+          <p>Starting with three eggs and our cheese blend.</p>
+
+          <div className="grid grid-cols-3 gap-12">
+            {build.map((everyday, index) => (
+              <div key={index} className="grid">
+                <div>
+                  <h2 className="text-2xl">{everyday.header}</h2>
+                </div>
+                <div>
+                  <p>{everyday.body}</p>
+                </div>
+                <div>
+                  <p>{everyday.price}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h1 className="text-6xl my-10">Everyday Favorites</h1>
 
           <div className="grid grid-cols-3 gap-12">
             {everyday.map((everyday, index) => (
@@ -360,7 +376,7 @@ const Breakfast = () => {
               </div>
             ))}
           </div>
-          <h1 className="text-4xl my-10">Cakes and French Toasts</h1>
+          <h1 className="text-6xl my-10">Cakes and French Toasts</h1>
           <div className="grid grid-cols-3 gap-12">
             {bfasttwo.map((bfastone, index) => (
               <div key={index} className="grid">

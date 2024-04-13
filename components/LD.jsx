@@ -446,6 +446,7 @@ const LD = () => {
   return (
     <div className="flex flex-col justify-center items-center mx-16 menucontainer">
       <h1 className="text-6xl my-6">Lunch and Dinner</h1>
+      <span className="text-2xl my-6">Served after 11am</span>
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-6xl my-6">Appetizers</h2>
         <div className="grid grid-cols-3 gap-12">
@@ -461,17 +462,10 @@ const LD = () => {
           ))}
         </div>
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-6xl my-6">Burgers</h1>
-          <p className="mx-12 text-xl my-6">
-            {" "}
-            Burgers come with your choice of soup, salad, fries, or chippers.
-            Sweet potato waffle fries add 1.99 / Onion rings add 3.25 Add ons:
-            American, Swiss, Mozzarella, pepper jack, mushrooms, bbq sauce, or
-            jalapenos - 1.00 each portobello mushrooms, onion rings, onion
-            tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or
-            brat patty 3.99 each
-          </p>
+        
           <h1>Hot Sandwiches</h1>
+          <span>All sandwiches come with soup, salad, fries, or chippers.</span>
+          <span>Sweet potato waffle fries add 1.99 / Onion rings add 3.25 / Add cheese 1.00</span>
           <div className="grid grid-cols-3 gap-12">
           {hots.map((item, index) => (
             <div
@@ -484,6 +478,16 @@ const LD = () => {
             </div>
           ))}
         </div>
+        <h1 className="text-6xl my-6">Burgers</h1>
+          <p className="mx-12 text-xl my-6">
+            {" "}
+            Burgers come with your choice of soup, salad, fries, or chippers.
+            Sweet potato waffle fries add 1.99 / Onion rings add 3.25 Add ons:
+            American, Swiss, Mozzarella, pepper jack, mushrooms, bbq sauce, or
+            jalapenos - 1.00 each portobello mushrooms, onion rings, onion
+            tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or
+            brat patty 3.99 each
+          </p>
           <div className="grid grid-cols-3 gap-12">
             {burgers.map((item, index) => (
               <div
@@ -525,6 +529,12 @@ const LD = () => {
             ))}
           </div>
         </div>
+        <h1>Jack's Classics</h1>
+        <p>All Jack's Classics come with three sides, a homemade roll, and butter</p>
+        <h2>Jack's Side Choices:</h2>
+        <p>
+          Tossed salad - homemade salad of the day - mashed potatoes (with or without graby) - french fries - american fries - sweet potato waffle fries (add 1.99) - potato chippers - backed potato - cup of soup - veggie of the day - cottage cheese (add 1.99) - applesauce
+        </p>
         <div className="grid grid-cols-3 gap-12">
           {classics.map((item, index) => (
             <div
@@ -537,6 +547,8 @@ const LD = () => {
             </div>
           ))}
         </div>
+        <h1>Off The Hook</h1>
+        <p>Includes three sides</p>
         <div className="grid grid-cols-3 gap-12">
           {hook.map((item, index) => (
             <div
