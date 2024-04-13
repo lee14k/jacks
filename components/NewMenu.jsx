@@ -18,7 +18,7 @@ const ParentComponent = () => {
   };
 
   return (
-    <div>
+    <div className="mt-12">
       <div className="flex justify-center items-center gap-12">
         <ul className="flex gap-10 mb-16">
           <li className="flex flex-col justify-center items-center">
@@ -31,7 +31,7 @@ const ParentComponent = () => {
             </button>
           </li>
           <li className="flex flex-col justify-center items-center">
-            <Image src="/bfast.jpg" height={400} width={400} />{" "}
+            <Image src="/reuben.jpeg" height={500} width={500} />{" "}
             <button
               onClick={() => setActiveComponent("B")}
               className="bg-emerald-950 py-2 px-4 text-white text-xl"
@@ -41,7 +41,7 @@ const ParentComponent = () => {
           </li>
 
           <li className="flex flex-col justify-center items-center">
-            <Image src="/bfast.jpg" height={400} width={400} />{" "}
+            <Image src="/bbq.jpeg" height={500} width={500} />{" "}
             <button
               onClick={() => setActiveComponent("C")}
               className="bg-emerald-950 py-2 px-4 text-white text-xl"

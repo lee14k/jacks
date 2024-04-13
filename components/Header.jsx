@@ -13,7 +13,7 @@ const Header = () => {
   const headline = "Welcome to Jack's"; // The headline that overlays the images
   const homeImages = ["/breads.jpeg", "/bbq.jpeg", "/pie.jpeg"];
   return (
-    <div className>
+    <div className="w-lvw">
       <div className="headercontainer flex flex-col justify-center items-center w-lvw">
         <Image
           src="/newjacks.png"
@@ -43,11 +43,10 @@ const Header = () => {
                 <h2 className="text-6xl">Hometown cooking</h2>
                 <Image src="/jacksborder.png" height={400} width={400} />
                 <p className="text-xl text-pretty">
-                Our cozy diner-style restaurant has
-                  been serving up delicious meals and warm smiles for
-                  generations. From mouthwatering breakfasts to hearty lunches
-                  and hand-smoked BBQ and dinners, we take pride in offering
-                  dishes made with love.
+                  Our cozy diner-style restaurant has been serving up delicious
+                  meals and warm smiles for generations. From mouthwatering
+                  breakfasts to hearty lunches and hand-smoked BBQ and dinners,
+                  we take pride in offering dishes made with love.
                 </p>
               </div>
             </div>

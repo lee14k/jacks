@@ -471,7 +471,19 @@ const LD = () => {
             tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or
             brat patty 3.99 each
           </p>
-
+          <h1>Hot Sandwiches</h1>
+          <div className="grid grid-cols-3 gap-12">
+          {hots.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center"
+            >
+              <h2 className="text-3xl">{item.header}</h2>
+              <p>{item.body}</p>
+              <p>{item.price}</p>
+            </div>
+          ))}
+        </div>
           <div className="grid grid-cols-3 gap-12">
             {burgers.map((item, index) => (
               <div
@@ -513,6 +525,31 @@ const LD = () => {
             ))}
           </div>
         </div>
+        <div className="grid grid-cols-3 gap-12">
+          {classics.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center"
+            >
+              <h2 className="text-3xl">{item.header}</h2>
+              <p>{item.body}</p>
+              <p>{item.price}</p>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-3 gap-12">
+          {hook.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center"
+            >
+              <h2 className="text-3xl">{item.header}</h2>
+              <p>{item.body}</p>
+              <p>{item.price}</p>
+            </div>
+          ))}
+        </div>
+     
         <div>
           Cold Sandwiches tuna salad - 10.99 roast beef, turkey, pork 12.99
           fries not included
