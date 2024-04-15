@@ -13,7 +13,7 @@ const Header = () => {
   const headline = "Welcome to Jack's"; // The headline that overlays the images
   const homeImages = ["/breads.jpeg", "/bbq.jpeg", "/pie.jpeg"];
   return (
-    <div className="w-lvw">
+    <div className="bigheadcontainer">
       <div className="headercontainer flex flex-col justify-center items-center w-lvw">
         <Image
           src="/newjacks.png"
@@ -32,7 +32,7 @@ const Header = () => {
       <PrettyPhotoRow images={homeImages} headline={headline} />
 
       <div className="flex justify-center items-center text-center ">
-        <div className="mx-48 my-32 grid grid-cols-2 ">
+        <div className="mx-48 my-32 grid lg:grid-cols-2 ">
           <div>
             <Image src="/signill.png" height={200} width={200} />
           </div>

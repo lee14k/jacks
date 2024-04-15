@@ -180,3 +180,7 @@ body {
   box-shadow: 0 8px 75px rgba(0, 0, 0, 0.35); /* Customize this to get the desired shadow effect */
   border-radius: inherit; /* If your container has rounded corners */
 }
+
+.bigheadcontainer {
+  width: 100lvw;
+}
