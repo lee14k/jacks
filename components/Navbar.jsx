@@ -11,7 +11,7 @@ const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: false },
-  { href: "/none", current: false, img: "/newjacksb.png" },
+  { href: "/", current: false, img: "/newjacksb.png" },
 
   { name: "Menu", href: "/menu", current: false },
   { name: "Contact", href: "/contact", current: false },

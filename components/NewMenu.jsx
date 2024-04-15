@@ -20,7 +20,7 @@ const ParentComponent = () => {
   return (
     <div className="mt-12">
       <div className="flex justify-center items-center gap-12">
-        <ul className="flex gap-10 mb-16">
+        <ul className="flex sm:flex-col  gap-10 mb-16">
           <li className="flex flex-col justify-center items-center">
             <Image src="/bfast.jpg" height={500} width={500} />{" "}
             <button
