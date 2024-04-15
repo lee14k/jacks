@@ -3,15 +3,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import NewMenu from "@/components/NewMenu";
+import { Merriweather } from "next/font/google";
 
+const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 export default function Menu() {
   const [state, setState] = useState("start");
 
   return (
-    <div>
+    <div className={merriweather.className}>
       <Navbar />
       <div className="flex flex-col justify-center items-center menuheader">
-        <h1 className="text-8xl my-12">Menu</h1>
+        <h1 className="text-8xl my-12 text-white">Menu</h1>
       </div>
       <NewMenu />
       <div className="flex gap-12 justify-center items-center">

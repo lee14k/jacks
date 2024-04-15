@@ -3,6 +3,9 @@ import LD from "@/components/LD";
 import Breakfast from "@/components/Breakfast";
 import BBQMenu from "@/components/BBQMenu";
 import Image from "next/image";
+import { Merriweather } from "next/font/google";
+
+const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 const ParentComponent = () => {
   const [activeComponent, setActiveComponent] = useState("");
 
@@ -18,6 +21,7 @@ const ParentComponent = () => {
   };
 
   return (
+    <div className={merriweather.className}>
     <div className="mt-12">
       <div className="flex justify-center items-center gap-12">
         <ul className="flex lg:flex-row flex-col  gap-10 mb-16">
@@ -52,6 +56,7 @@ const ParentComponent = () => {
         </ul>
       </div>
       <div>{renderComponent()}</div>
+    </div>
     </div>
   );
 };
