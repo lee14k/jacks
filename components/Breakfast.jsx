@@ -300,6 +300,7 @@ const Breakfast = () => {
     },
   ];
   return (
+    <div>
     <div className="flex flex-col justify-center items-center mx-6 menucontainer">
       <div className="mx-12  flex flex-col justify-center items-center">
         <h1 className="text-6xl my-6">Breakfast</h1>
@@ -428,6 +429,7 @@ const Breakfast = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

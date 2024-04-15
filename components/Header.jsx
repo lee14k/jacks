@@ -13,6 +13,7 @@ const Header = () => {
   const headline = "Welcome to Jack's"; // The headline that overlays the images
   const homeImages = ["/breads.jpeg", "/bbq.jpeg", "/pie.jpeg"];
   return (
+    <div className={merriweather.className}>
     <div className="bigheadcontainer">
       <div className="headercontainer flex flex-col justify-center items-center w-lvw">
         <Image
@@ -33,8 +34,8 @@ const Header = () => {
 
       <div className="flex justify-center items-center text-center ">
         <div className="mx-48 my-32 grid lg:grid-cols-2 ">
-          <div>
-            <Image src="/signill.png" height={200} width={200} />
+          <div className="pl-24">
+            <Image src="/signill.png" height={300} width={300} />
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center">
@@ -42,7 +43,7 @@ const Header = () => {
                 <h3 className="text-4xl">At the crossroads of the UP</h3>
                 <h2 className="text-6xl">Hometown cooking</h2>
                 <Image src="/jacksborder.png" height={400} width={400} />
-                <p className="text-xl text-pretty">
+                <p className="text-2xl text-pretty mx-12">
                   Our cozy diner-style restaurant has been serving up delicious
                   meals and warm smiles for generations. From mouthwatering
                   breakfasts to hearty lunches and hand-smoked BBQ and dinners,
@@ -53,6 +54,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
