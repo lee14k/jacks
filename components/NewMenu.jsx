@@ -25,7 +25,7 @@ const ParentComponent = () => {
             <Image src="/breads.jpeg" height={500} width={500} />{" "}
             <button
               onClick={() => setActiveComponent("A")}
-              className="bg-emerald-950 py-2  px-48 text-white text-xl"
+              className="bg-emerald-950 py-2 mt-2 px-48 text-white text-xl"
             >
               Breakfast{" "}
             </button>
@@ -34,7 +34,7 @@ const ParentComponent = () => {
             <Image src="/reuben.jpeg" height={500} width={500} />{" "}
             <button
               onClick={() => setActiveComponent("B")}
-              className="bg-emerald-950 py-2 px-48 text-white text-xl"
+              className="bg-emerald-950 py-2 mt-2 px-48 text-white text-xl"
             >
               Lunch & Dinner{" "}
             </button>{" "}
@@ -44,7 +44,7 @@ const ParentComponent = () => {
             <Image src="/bbq.jpeg" height={500} width={500} />{" "}
             <button
               onClick={() => setActiveComponent("C")}
-              className="bg-emerald-950 py-2 px-48 text-white text-xl"
+              className="mt-2 bg-emerald-950 py-2 px-52 text-white text-xl"
             >
               BBQ{" "}
             </button>

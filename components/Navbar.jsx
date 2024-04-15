@@ -56,9 +56,7 @@ export default function Navbar() {
                         <div className={merriweather.className}>
                           <div
                             className={classNames(
-                              item.current
-                                ? "bg-gray-900 text-white"
-                                : "hover:bg-gray-700 hover:text-white",
+                              item.img ? "text-gray-500 cursor-default" : item.current ? "bg-gray-900 text-white" : "hover:bg-gray-700 hover:text-white",
                               "px-3 py-2 rounded-md text-2xl font-medium flex items-center cursor-pointer mx-12"
                             )}
                             aria-current={item.current ? "page" : undefined}
@@ -70,7 +68,7 @@ export default function Navbar() {
                                 className="mr-2 h-auto lg:w-48"
                               />
                             )}
-                            {item.name}
+                            {!item.img && item.name}
                           </div>
                         </div>
                       </Link>
@@ -89,9 +87,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    item.img ? "text-gray-500" : item.current ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium flex items-center"
                   )}
                   aria-current={item.current ? "page" : undefined}
@@ -102,9 +98,8 @@ export default function Navbar() {
                       alt={item.name}
                       className="mr-2 h-36 w-40"
                     />
-                  )}{" "}
-                  {/* Add image next to text */}
-                  {item.name}
+                  )}
+                  {!item.img && item.name}
                 </Disclosure.Button>
               ))}
             </div>
