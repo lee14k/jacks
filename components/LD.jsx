@@ -546,13 +546,13 @@ const LD = () => {
 
           <div className="grid grid-cols-3 gap-12">
             {wraps.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-center items-center"
-              >
-                <h2 className="text-3xl">{item.header}</h2>
+              <div key={index} className="grid">
+                <div className="flex items-center ">
+                  {" "}
+                  <h2 className="text-3xl">{item.header}</h2>
+                  <p>............{item.price}</p>
+                </div>
                 <p>{item.body}</p>
-                <p>{item.price}</p>
               </div>
             ))}
           </div>
@@ -560,11 +560,11 @@ const LD = () => {
             {salads.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center"
+                className="grid"
               >
-                <h2 className="text-3xl">{item.header}</h2>
+                <div className="flex items-center "><h2 className="text-3xl">{item.header}</h2>
+                  <p>............{item.price}</p></div>
                 <p>{item.body}</p>
-                <p>{item.price}</p>
               </div>
             ))}
           </div>
@@ -582,13 +582,13 @@ const LD = () => {
         </p>
         <div className="grid grid-cols-3 gap-12">
           {classics.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col justify-center items-center"
-            >
-              <h2 className="text-3xl">{item.header}</h2>
+            <div key={index} className="grid">
+              <div className="flex items-center ">
+                {" "}
+                <h2 className="text-3xl">{item.header}</h2>{" "}
+                <p>............{item.price}</p>
+              </div>
               <p>{item.body}</p>
-              <p>{item.price}</p>
             </div>
           ))}
         </div>
@@ -596,13 +596,13 @@ const LD = () => {
         <p className="text-xl my-6">Includes three sides</p>
         <div className="grid grid-cols-3 gap-12">
           {hook.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col justify-center items-center"
-            >
-              <h2 className="text-3xl">{item.header}</h2>
+            <div key={index} className="grid">
+              <div className="flex items-center">
+                {" "}
+                <h2 className="text-3xl">{item.header}</h2>
+                <p>............{item.price}</p>
+              </div>
               <p>{item.body}</p>
-              <p>{item.price}</p>
             </div>
           ))}
         </div>
