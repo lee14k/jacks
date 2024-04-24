@@ -508,13 +508,12 @@ const LD = () => {
             <h1 className="text-6xl my-6">Cold Sandwiches</h1>
             <div className="grid grid-cols-3 gap-12">
               {coldsams.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col justify-center items-center"
-                >
-                  <h2 className="text-3xl">{item.header}</h2>
+                <div key={index} className="grid">
+                  <div className="flex items-center ">
+                    <h2 className="text-3xl">{item.header}</h2>
+                    <p> ............{item.price}</p>
+                  </div>
                   <p className="mx-12 text-center">{item.body}</p>
-                  <p>{item.price}</p>
                 </div>
               ))}
             </div>
@@ -531,13 +530,13 @@ const LD = () => {
           </p>
           <div className="grid grid-cols-3 gap-12">
             {burgers.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-center items-center"
-              >
-                <h2 className="text-3xl">{item.header}</h2>
-                <p className="mx-12 text-center">{item.body}</p>
-                <p>{item.price}</p>
+              <div key={index} className="grid">
+                <div className="flex items-center ">
+                  {" "}
+                  <h2 className="text-3xl">{item.header}</h2>
+                  <p> ............{item.price}</p>
+                </div>
+                <p className="mx-12">{item.body}</p>
               </div>
             ))}
           </div>
