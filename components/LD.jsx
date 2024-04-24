@@ -333,6 +333,29 @@ const LD = () => {
     },
   ];
 
+  const coldsams = [
+    {
+      header: "Half Sandwich & Cup of Soup ",
+      body: "Fries not included",
+      price: "$9.69",
+    },
+    {
+      header: "Tuna Salad",
+      body: "",
+      price: "$10.99",
+    },
+    {
+      header: "Roast Beef, Turkey, or Pork ",
+      body: "",
+      price: "$12.99",
+    },
+    {
+      header: "Egg Salad ",
+      body: "",
+      price: "$7.99",
+    },
+  ];
+
   const drinkos = [
     {
       header: "Coke, Diet Coke, Mello Yello, Sprite, Cherry Coke, Dr. Pepper",
@@ -451,34 +474,52 @@ const LD = () => {
         <h2 className="text-6xl my-6">Appetizers</h2>
         <div className="grid grid-cols-3 gap-12">
           {lunch.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col justify-center items-center"
-            >
-              <h2 className="text-3xl">{item.header}</h2>
-              <p>{item.body}</p>
-              <p>{item.price}</p>
+            <div key={index} className="grid">
+              <div className="flex items-center ">
+                <h2 className="text-3xl">{item.header}</h2>............
+                <p>{item.price}</p>
+              </div>
+              <p className="mx-12 text-center">{item.body}</p>
             </div>
           ))}
         </div>
         <div className="flex flex-col justify-center items-center">
-        
-          <h1>Hot Sandwiches</h1>
-          <span>All sandwiches come with soup, salad, fries, or chippers.</span>
-          <span>Sweet potato waffle fries add 1.99 / Onion rings add 3.25 / Add cheese 1.00</span>
+          <h1 className="text-6xl my-6">Hot Sandwiches</h1>
+          <span className="mx-12 text-xl my-6">
+            All sandwiches come with soup, salad, fries, or chippers.
+          </span>
+          <span className="mx-12 text-xl my-6">
+            Sweet potato waffle fries add 1.99 / Onion rings add 3.25 / Add
+            cheese 1.00
+          </span>
           <div className="grid grid-cols-3 gap-12">
-          {hots.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col justify-center items-center"
-            >
-              <h2 className="text-3xl">{item.header}</h2>
-              <p>{item.body}</p>
-              <p>{item.price}</p>
+            {hots.map((item, index) => (
+              <div key={index} className="grid">
+                <div className="flex items-center ">
+                  {" "}
+                  <h2 className="text-3xl">{item.header}</h2>{" "}
+                  <p>............{item.price}</p>
+                </div>
+                <p className="mx-12 text-center">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-6xl my-6">Cold Sandwiches</h1>
+            <div className="grid grid-cols-3 gap-12">
+              {coldsams.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col justify-center items-center"
+                >
+                  <h2 className="text-3xl">{item.header}</h2>
+                  <p className="mx-12 text-center">{item.body}</p>
+                  <p>{item.price}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <h1 className="text-6xl my-6">Burgers</h1>
+          </div>
+          <h1 className="text-6xl my-6">Burgers</h1>
           <p className="mx-12 text-xl my-6">
             {" "}
             Burgers come with your choice of soup, salad, fries, or chippers.
@@ -495,7 +536,7 @@ const LD = () => {
                 className="flex flex-col justify-center items-center"
               >
                 <h2 className="text-3xl">{item.header}</h2>
-                <p>{item.body}</p>
+                <p className="mx-12 text-center">{item.body}</p>
                 <p>{item.price}</p>
               </div>
             ))}
@@ -529,11 +570,16 @@ const LD = () => {
             ))}
           </div>
         </div>
-        <h1>Jack's Classics</h1>
-        <p>All Jack's Classics come with three sides, a homemade roll, and butter</p>
-        <h2>Jack's Side Choices:</h2>
+        <h1 className="text-6xl my-6">Jack's Classics</h1>
         <p>
-          Tossed salad - homemade salad of the day - mashed potatoes (with or without graby) - french fries - american fries - sweet potato waffle fries (add 1.99) - potato chippers - backed potato - cup of soup - veggie of the day - cottage cheese (add 1.99) - applesauce
+          All Jack's Classics come with three sides, a homemade roll, and butter
+        </p>
+        <h2 className="text-2xl my-6">Jack's Side Choices:</h2>
+        <p className="text-xl">
+          Tossed salad - homemade salad of the day - mashed potatoes (with or
+          without gravy) - french fries - american fries - sweet potato waffle
+          fries (add 1.99) - potato chippers - backed potato - cup of soup -
+          veggie of the day - cottage cheese (add 1.99) - applesauce
         </p>
         <div className="grid grid-cols-3 gap-12">
           {classics.map((item, index) => (
@@ -547,8 +593,8 @@ const LD = () => {
             </div>
           ))}
         </div>
-        <h1>Off The Hook</h1>
-        <p>Includes three sides</p>
+        <h1 className="text-6xl my-6">Off The Hook</h1>
+        <p className="text-xl my-6">Includes three sides</p>
         <div className="grid grid-cols-3 gap-12">
           {hook.map((item, index) => (
             <div
@@ -561,12 +607,6 @@ const LD = () => {
             </div>
           ))}
         </div>
-     
-        <div>
-          Cold Sandwiches tuna salad - 10.99 roast beef, turkey, pork 12.99
-          fries not included
-        </div>
-        sat night feature thing
       </div>
     </div>
   );
