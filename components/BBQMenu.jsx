@@ -210,14 +210,14 @@ const BBQMenu = () => {
       <div className="grid grid-cols-3 gap-12">
         {bbqone.map((bbqone, index) => (
           <div key={index} className="grid">
-            <div>
-              <h2 className="text-2xl">{bbqone.header}</h2>
+            <div className="flex items-center ">
+              <h2 className="text-xl">{bbqone.header}</h2>
+              <p> ............{bbqone.price}</p>
             </div>
             <div>
               <p>{bbqone.body}</p>
             </div>
             <div>
-              <p>{bbqone.price}</p>
             </div>
           </div>
         ))}

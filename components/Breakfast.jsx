@@ -236,7 +236,7 @@ const Breakfast = () => {
 
   const sdrinks = [
     {
-      header: "Coke, Diet Coke, Mello Yello, Sprite, Cherry Coke, Dr. Pepper",
+      header: "Coke, Diet Coke, Mello Yello, Sprite, Dr. Pepper",
       body: "",
       price: "$2.79",
     },
@@ -311,7 +311,7 @@ const Breakfast = () => {
             {bfastone.map((bfastone, index) => (
               <div key={index} className="grid mx-12">
                 <div className="flex items-center ">
-                  <h2 className="text-2xl">{bfastone.header}</h2>
+                  <h2 className="text-xl">{bfastone.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{bfastone.price}
                   </span>
@@ -350,7 +350,7 @@ const Breakfast = () => {
             {build.map((everyday, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-2xl">{everyday.header}</h2>
+                  <h2 className="text-xl">{everyday.header}</h2>
                
                 </div>
                 <div>
@@ -365,7 +365,7 @@ const Breakfast = () => {
             {everyday.map((everyday, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-2xl">{everyday.header}</h2>
+                  <h2 className="text-xl">{everyday.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{everyday.price}
                   </span>
@@ -398,7 +398,7 @@ const Breakfast = () => {
             {bsides.map((bsides, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-2xl">{bsides.header}</h2>
+                  <h2 className="text-xl">{bsides.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{bsides.price}
                   </span>
@@ -416,7 +416,7 @@ const Breakfast = () => {
             {sdrinks.map((sdrinks, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-2xl">{sdrinks.header}</h2>
+                  <h2 className="text-xl">{sdrinks.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{sdrinks.price}
                   </span>
