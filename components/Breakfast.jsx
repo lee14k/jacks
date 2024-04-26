@@ -66,8 +66,8 @@ const Breakfast = () => {
       price: "5.99",
     },
     {
-      header: "Pecan Roll (Sundays only)",
-      body: [],
+      header: "Pecan Rolls",
+      body: "Only on Sundays",
       price: "8.99",
     },
     {
@@ -328,7 +328,7 @@ const Breakfast = () => {
               {omelettes.map((omelettes, index) => (
                 <div key={index} className="grid">
                   <div className="flex">
-                    <h2 className="text-2xl">{omelettes.header}</h2>
+                    <h2 className="text-xl">{omelettes.header}</h2>
                     <span className="flex items-center justify-center">
                       ..............{omelettes.price}
                     </span>
@@ -382,7 +382,7 @@ const Breakfast = () => {
             {bfasttwo.map((bfastone, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-2xl">{bfastone.header}</h2>
+                  <h2 className="text-xl">{bfastone.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{bfastone.price}
                   </span>

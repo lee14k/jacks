@@ -477,9 +477,9 @@ const LD = () => {
             <div key={index} className="grid">
               <div className="flex items-center ">
                 <h2 className="text-3xl">{item.header}</h2>............
-                <p>{item.price}</p>
+                <p >{item.price}</p>
               </div>
-              <p className="mx-12 text-center">{item.body}</p>
+              <p className="mx-12">{item.body}</p>
             </div>
           ))}
         </div>
