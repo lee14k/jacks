@@ -71,7 +71,7 @@ const Breakfast = () => {
       price: "8.99",
     },
     {
-      header: "The Legend Country Fried Steak",
+      header: "The Legend",
       body: "Country fried steak golden brown served with two eggs, hash browns, and choice of toast.",
       price: "$14.99",
     },
