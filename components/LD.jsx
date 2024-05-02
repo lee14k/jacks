@@ -289,7 +289,7 @@ const LD = () => {
       price: "$18.99",
     },
     {
-      header: "Grilled Citrus Salmon",
+      header: "Grilled Salmon",
       body: "Two lightly seasoned fillets grilled to perfection",
       price: "$18.99 | One fillet $16.99",
     },
@@ -299,7 +299,7 @@ const LD = () => {
       price: "$15.99",
     },
     {
-      header: "Beer Battered Cod",
+      header: "Battered Cod",
       body: "Crisp deep fried golden brown cod fillets",
       price: "$14.99",
     },
