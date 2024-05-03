@@ -226,14 +226,12 @@ const BBQMenu = () => {
       <div className="grid grid-cols-3 gap-12 pb-12">
         {bbqtwo.map((bbqtwo, index) => (
           <div key={index} className="grid">
-            <div>
+            <div className="flex items-center ">
               <h2 className="text-2xl">{bbqtwo.header}</h2>
+              <p> ............{bbqtwo.price}</p>
             </div>
             <div>
               <p>{bbqtwo.body}</p>
-            </div>
-            <div>
-              <p>{bbqtwo.price}</p>
             </div>
           </div>
         ))}
@@ -243,14 +241,14 @@ const BBQMenu = () => {
       <div className="grid grid-cols-3 gap-12">
         {bbqthree.map((bbqthree, index) => (
           <div key={index} className="grid">
-            <div>
+            <div className="flex items-center ">
               <h2 className="text-2xl">{bbqthree.header}</h2>
+              <p>............{bbqthree.price}</p>
             </div>
             <div>
               <p>{bbqthree.body}</p>
             </div>
             <div>
-              <p>{bbqthree.price}</p>
             </div>
           </div>
         ))}
@@ -260,14 +258,14 @@ const BBQMenu = () => {
       <div className="grid grid-cols-3 gap-12">
         {bbqburgers.map((bbqburgers, index) => (
           <div key={index} className="grid">
-            <div>
+            <div className="flex items-center ">
               <h2 className="text-2xl">{bbqburgers.header}</h2>
+              <p>............{bbqburgers.price}</p>
             </div>
             <div>
               <p>{bbqburgers.body}</p>
             </div>
             <div>
-              <p>{bbqburgers.price}</p>
             </div>
           </div>
         ))}
@@ -277,14 +275,14 @@ const BBQMenu = () => {
       <div className="grid grid-cols-3 gap-12">
         {backwoods.map((backwoods, index) => (
           <div key={index} className="grid">
-            <div>
+            <div className="flex items-center ">
               <h2 className="text-2xl">{backwoods.header}</h2>
+              <p> ............{backwoods.price}</p>
             </div>
             <div>
               <p>{backwoods.body}</p>
             </div>
             <div>
-              <p>{backwoods.price}</p>
             </div>
           </div>
         ))}
@@ -297,14 +295,12 @@ const BBQMenu = () => {
       <div className="grid grid-cols-3 gap-12">
         {pack.map((pack, index) => (
           <div key={index} className="grid">
-            <div>
+            <div className="flex items-center ">
               <h2 className="text-2xl">{pack.header}</h2>
+              <p>............{pack.price}</p>
             </div>
             <div>
               <p>{pack.body}</p>
-            </div>
-            <div>
-              <p>{pack.price}</p>
             </div>
           </div>
         ))}
@@ -313,14 +309,12 @@ const BBQMenu = () => {
 
       {bbqdessert.map((bbqdessert, index) => (
         <div key={index} className="grid">
-          <div>
+          <div className="flex items-center ">
             <h2 className="text-2xl">{bbqdessert.header}</h2>
+            <p>............{bbqdessert.price}</p>
           </div>
           <div>
             <p>{bbqdessert.body}</p>
-          </div>
-          <div>
-            <p>{bbqdessert.price}</p>
           </div>
         </div>
       ))}
