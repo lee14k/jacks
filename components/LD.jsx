@@ -335,7 +335,7 @@ const LD = () => {
 
   const coldsams = [
     {
-      header: "Half Sandwich & Cup of Soup ",
+      header: "1/2 Sandwich & Cup of Soup ",
       body: "Fries not included",
       price: "$9.69",
     },
@@ -472,7 +472,7 @@ const LD = () => {
       <span className="text-2xl my-6">Served after 11am</span>
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-6xl my-6">Appetizers</h2>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid grid-cols-3 gap-8">
           {lunch.map((item, index) => (
             <div key={index} className="grid">
               <div className="flex items-center ">
@@ -492,7 +492,7 @@ const LD = () => {
             Sweet potato waffle fries add 1.99 / Onion rings add 3.25 / Add
             cheese 1.00
           </span>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-3 gap-8">
             {hots.map((item, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
@@ -506,7 +506,7 @@ const LD = () => {
           </div>
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-6xl my-6">Cold Sandwiches</h1>
-            <div className="grid grid-cols-3 gap-12">
+            <div className="grid grid-cols-2 gap-12 gap-x-48">
               {coldsams.map((item, index) => (
                 <div key={index} className="grid">
                   <div className="flex items-center ">
@@ -528,7 +528,7 @@ const LD = () => {
             tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or
             brat patty 3.99 each
           </p>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-3 gap-8">
             {burgers.map((item, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
@@ -544,7 +544,7 @@ const LD = () => {
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-6xl my-6">Wraps and Salads</h2>
 
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-3 gap-8">
             {wraps.map((item, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
@@ -556,7 +556,7 @@ const LD = () => {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-3 gap-8">
             {salads.map((item, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
@@ -579,7 +579,7 @@ const LD = () => {
           fries (add 1.99) - potato chippers - backed potato - cup of soup -
           veggie of the day - cottage cheese (add 1.99) - applesauce
         </p>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid grid-cols-3 gap-8">
           {classics.map((item, index) => (
             <div key={index} className="grid">
               <div className="flex items-center ">
@@ -593,7 +593,7 @@ const LD = () => {
         </div>
         <h1 className="text-6xl my-6">Off The Hook</h1>
         <p className="text-xl my-6">Includes three sides</p>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid grid-cols-3 gap-8">
           {hook.map((item, index) => (
             <div key={index} className="grid">
               <div className="flex items-center">

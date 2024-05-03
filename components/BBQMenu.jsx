@@ -204,10 +204,11 @@ const BBQMenu = () => {
   ];
   return (
     <div className="mx-16 menucontainer">
+      <div className="flex justify-center items-center flex-col">
       <h1 className="text-6xl">BBQ </h1>
-      <h1 className="text-6xl mt-10">Appetizers </h1>
-
-      <div className="grid grid-cols-3 gap-12">
+      <h1 className="text-6xl my-10">Appetizers </h1>
+      
+      <div className="grid grid-cols-3 gap-8">
         {bbqone.map((bbqone, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
@@ -222,8 +223,9 @@ const BBQMenu = () => {
           </div>
         ))}
       </div>
+      <div></div>
       <h1 className="text-4xl mt-10">Fan Favorites</h1>
-      <div className="grid grid-cols-3 gap-12 pb-12">
+      <div className="grid grid-cols-3 gap-8 pb-12">
         {bbqtwo.map((bbqtwo, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
@@ -238,7 +240,7 @@ const BBQMenu = () => {
       </div>
       <h1 className="text-4xl mt-10">Burritos, Nachos, and Wraps</h1>
 
-      <div className="grid grid-cols-3 gap-12">
+      <div className="grid grid-cols-3 gap-8">
         {bbqthree.map((bbqthree, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
@@ -255,7 +257,7 @@ const BBQMenu = () => {
       </div>
       <h1 className="text-4xl mt-10">Burgers, Baskets, and Wraps</h1>
 
-      <div className="grid grid-cols-3 gap-12">
+      <div className="grid grid-cols-3 gap-8">
         {bbqburgers.map((bbqburgers, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
@@ -272,7 +274,7 @@ const BBQMenu = () => {
       </div>
       <h1 className="text-4xl mt-10">Backwoods Sandwiches</h1>
 
-      <div className="grid grid-cols-3 gap-12">
+      <div className="grid grid-cols-3 gap-8">
         {backwoods.map((backwoods, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
@@ -292,7 +294,7 @@ const BBQMenu = () => {
         Choose from beef brisket, maple glazed pulled pork, BBQ pork ribs,
         smoked chicken, honey smoked ham, smoked turkey, or burnt ends
       </p>
-      <div className="grid grid-cols-3 gap-12">
+      <div className="grid grid-rows-3 gap-8">
         {pack.map((pack, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
@@ -318,6 +320,7 @@ const BBQMenu = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
