@@ -294,7 +294,7 @@ const BBQMenu = () => {
         Choose from beef brisket, maple glazed pulled pork, BBQ pork ribs,
         smoked chicken, honey smoked ham, smoked turkey, or burnt ends
       </p>
-      <div className="grid grid-rows-3 gap-8">
+      <div className="grid grid-rows-3 ">
         {pack.map((pack, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">

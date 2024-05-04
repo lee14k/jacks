@@ -184,3 +184,6 @@ body {
 .bigheadcontainer {
   width: 100lvw;
 }
+.custom-gap {
+  column-gap: 0px; 
+}

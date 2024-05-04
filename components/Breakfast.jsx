@@ -307,17 +307,17 @@ const Breakfast = () => {
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-6xl my-10">Breakfast Specials</h1>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 custom-gap mx-48">
             {bfastone.map((bfastone, index) => (
-              <div key={index} className="grid mx-12">
+              <div key={index} className="grid">
                 <div className="flex items-center ">
                   <h2 className="text-xl">{bfastone.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{bfastone.price}
                   </span>
                 </div>
-                <div>
-                  <p>{bfastone.body}</p>
+                <div className="mr-12">
+                  <p className="">{bfastone.body}</p>
                 </div>
               </div>
             ))}
