@@ -317,7 +317,7 @@ const Breakfast = () => {
                   </span>
                 </div>
                 <div className="mr-12">
-                  <p className="">{bfastone.body}</p>
+                  <p className="max-w-sm">{bfastone.body}</p>
                 </div>
               </div>
             ))}
