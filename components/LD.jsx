@@ -1,7 +1,7 @@
 const LD = () => {
   const lunch = [
     {
-      header: "Soup of the Day or Chili",
+      header: "Soup of the Day",
       body: "Fresh and homemade. ",
       price: "$4.99 Cup | $5.99 Bowl",
     },
@@ -467,7 +467,8 @@ const LD = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center mx-16 menucontainer">
+    <div className="flex flex-col justify-center items-center menucontainer">
+      <div className="mx-24 flex flex-col justify-center items-center">
       <h1 className="text-6xl my-6">Lunch and Dinner</h1>
       <span className="text-2xl my-6">Served after 11am</span>
       <div className="flex flex-col justify-center items-center">
@@ -485,7 +486,7 @@ const LD = () => {
         </div>
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-6xl my-6">Hot Sandwiches</h1>
-          <span className="mx-12 text-xl my-6">
+          <span className="mx-12 text-xl my-2">
             All sandwiches come with soup, salad, fries, or chippers.
           </span>
           <span className="mx-12 text-xl my-6">
@@ -513,7 +514,7 @@ const LD = () => {
                     <h2 className="text-3xl">{item.header}</h2>
                     <p> ............{item.price}</p>
                   </div>
-                  <p className="mx-12 text-center">{item.body}</p>
+                  <p className="mx-12 max-w-sm">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -536,13 +537,13 @@ const LD = () => {
                   <h2 className="text-3xl">{item.header}</h2>
                   <p> ............{item.price}</p>
                 </div>
-                <p className="mx-12">{item.body}</p>
+                <p className="mx-12 max-w-sm">{item.body}</p>
               </div>
             ))}
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <h2 className="text-6xl my-6">Wraps and Salads</h2>
+          <h2 className="text-6xl my-6">Wraps</h2>
 
           <div className="grid grid-cols-3 gap-8">
             {wraps.map((item, index) => (
@@ -552,10 +553,12 @@ const LD = () => {
                   <h2 className="text-3xl">{item.header}</h2>
                   <p>............{item.price}</p>
                 </div>
-                <p>{item.body}</p>
+                <p className="mx-12 max-w-sm">{item.body}</p>
               </div>
             ))}
           </div>
+          <h2 className="text-6xl my-6">Salads</h2>
+
           <div className="grid grid-cols-3 gap-8">
             {salads.map((item, index) => (
               <div key={index} className="grid">
@@ -563,7 +566,7 @@ const LD = () => {
                   <h2 className="text-3xl">{item.header}</h2>
                   <p>............{item.price}</p>
                 </div>
-                <p>{item.body}</p>
+                <p className="mx-12 max-w-sm">{item.body}</p>
               </div>
             ))}
           </div>
@@ -572,7 +575,7 @@ const LD = () => {
         <p>
           All Jack's Classics come with three sides, a homemade roll, and butter
         </p>
-        <h2 className="text-2xl my-6">Jack's Side Choices:</h2>
+        <h2 className="text-3xl my-6">Jack's Side Choices:</h2>
         <p className="text-xl">
           Tossed salad - homemade salad of the day - mashed potatoes (with or
           without gravy) - french fries - american fries - sweet potato waffle
@@ -587,7 +590,7 @@ const LD = () => {
                 <h2 className="text-3xl">{item.header}</h2>{" "}
                 <p>............{item.price}</p>
               </div>
-              <p>{item.body}</p>
+              <p className="mx-12 max-w-sm">{item.body}</p>
             </div>
           ))}
         </div>
@@ -596,15 +599,16 @@ const LD = () => {
         <div className="grid grid-cols-3 gap-8">
           {hook.map((item, index) => (
             <div key={index} className="grid">
-              <div className="flex items-center">
+             <div className="flex items-center ">
                 {" "}
-                <h2 className="text-3xl">{item.header}</h2>
+                <h2 className="text-3xl">{item.header}</h2>{" "}
                 <p>............{item.price}</p>
               </div>
               <p>{item.body}</p>
             </div>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );

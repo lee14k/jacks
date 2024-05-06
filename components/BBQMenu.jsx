@@ -203,7 +203,7 @@ const BBQMenu = () => {
     },
   ];
   return (
-    <div className="mx-16 menucontainer">
+    <div className="flex flex-col justify-center items-center mx-2 menucontainer">
       <div className="flex justify-center items-center flex-col">
       <h1 className="text-6xl">BBQ </h1>
       <h1 className="text-6xl my-10">Appetizers </h1>
@@ -212,11 +212,11 @@ const BBQMenu = () => {
         {bbqone.map((bbqone, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
-              <h2 className="text-xl">{bbqone.header}</h2>
+              <h2 className="text-3xl">{bbqone.header}</h2>
               <p> ............{bbqone.price}</p>
             </div>
             <div>
-              <p>{bbqone.body}</p>
+              <p className="mx-12 max-w-sm">{bbqone.body}</p>
             </div>
             <div>
             </div>
@@ -229,11 +229,11 @@ const BBQMenu = () => {
         {bbqtwo.map((bbqtwo, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
-              <h2 className="text-2xl">{bbqtwo.header}</h2>
+              <h2 className="text-3xl">{bbqtwo.header}</h2>
               <p> ............{bbqtwo.price}</p>
             </div>
             <div>
-              <p>{bbqtwo.body}</p>
+              <p className="mx-12 max-w-sm">{bbqtwo.body}</p>
             </div>
           </div>
         ))}
@@ -244,11 +244,11 @@ const BBQMenu = () => {
         {bbqthree.map((bbqthree, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
-              <h2 className="text-2xl">{bbqthree.header}</h2>
+              <h2 className="text-3xl">{bbqthree.header}</h2>
               <p>............{bbqthree.price}</p>
             </div>
             <div>
-              <p>{bbqthree.body}</p>
+              <p className="mx-12 max-w-sm">{bbqthree.body}</p>
             </div>
             <div>
             </div>
@@ -261,11 +261,11 @@ const BBQMenu = () => {
         {bbqburgers.map((bbqburgers, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
-              <h2 className="text-2xl">{bbqburgers.header}</h2>
+              <h2 className="text-3xl">{bbqburgers.header}</h2>
               <p>............{bbqburgers.price}</p>
             </div>
             <div>
-              <p>{bbqburgers.body}</p>
+              <p className="mx-12 max-w-sm">{bbqburgers.body}</p>
             </div>
             <div>
             </div>
@@ -278,11 +278,11 @@ const BBQMenu = () => {
         {backwoods.map((backwoods, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
-              <h2 className="text-2xl">{backwoods.header}</h2>
+              <h2 className="text-3xl">{backwoods.header}</h2>
               <p> ............{backwoods.price}</p>
             </div>
             <div>
-              <p>{backwoods.body}</p>
+              <p className="mx-12 max-w-sm">{backwoods.body}</p>
             </div>
             <div>
             </div>
@@ -298,11 +298,11 @@ const BBQMenu = () => {
         {pack.map((pack, index) => (
           <div key={index} className="grid">
             <div className="flex items-center ">
-              <h2 className="text-2xl">{pack.header}</h2>
+              <h2 className="text-3xl">{pack.header}</h2>
               <p>............{pack.price}</p>
             </div>
             <div>
-              <p>{pack.body}</p>
+              <p className="mx-12 max-w-sm">{pack.body}</p>
             </div>
           </div>
         ))}
@@ -312,11 +312,11 @@ const BBQMenu = () => {
       {bbqdessert.map((bbqdessert, index) => (
         <div key={index} className="grid">
           <div className="flex items-center ">
-            <h2 className="text-2xl">{bbqdessert.header}</h2>
+            <h2 className="text-3xl">{bbqdessert.header}</h2>
             <p>............{bbqdessert.price}</p>
           </div>
           <div>
-            <p>{bbqdessert.body}</p>
+            <p className="mx-12 max-w-sm">{bbqdessert.body}</p>
           </div>
         </div>
       ))}

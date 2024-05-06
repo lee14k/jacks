@@ -301,13 +301,13 @@ const Breakfast = () => {
   ];
   return (
     <div>
-    <div className="flex flex-col justify-center items-center mx-6 menucontainer">
-      <div className="mx-12  flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mx-2 menucontainer">
+      <div className="flex flex-col justify-center items-center">
         <h1 className="text-6xl my-6">Breakfast</h1>
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-6xl my-10">Breakfast Specials</h1>
 
-          <div className="grid lg:grid-cols-3 custom-gap mx-48">
+          <div className="grid lg:grid-cols-3 custom-gap ">
             {bfastone.map((bfastone, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
