@@ -311,7 +311,7 @@ const Breakfast = () => {
             {bfastone.map((bfastone, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-xl">{bfastone.header}</h2>
+                  <h2 className="text-3xl">{bfastone.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{bfastone.price}
                   </span>
@@ -328,13 +328,13 @@ const Breakfast = () => {
               {omelettes.map((omelettes, index) => (
                 <div key={index} className="grid">
                   <div className="flex">
-                    <h2 className="text-xl">{omelettes.header}</h2>
+                    <h2 className="text-3xl">{omelettes.header}</h2>
                     <span className="flex items-center justify-center">
                       ..............{omelettes.price}
                     </span>
                   </div>
                   <div>
-                    <p>{omelettes.body}</p>
+                    <p className="max-w-sm">{omelettes.body}</p>
                   </div>
                 </div>
               ))}
@@ -350,11 +350,11 @@ const Breakfast = () => {
             {build.map((everyday, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-xl">{everyday.header}</h2>
+                  <h2 className="text-3xl">{everyday.header}</h2>
                
                 </div>
                 <div>
-                  <p>{everyday.body}</p>
+                  <p className="max-w-sm">{everyday.body}</p>
                 </div>
               </div>
             ))}
@@ -371,7 +371,7 @@ const Breakfast = () => {
                   </span>
                 </div>
                 <div>
-                  <p>{everyday.body}</p>
+                  <p className="max-w-sm">{everyday.body}</p>
                 </div>
 
               </div>
@@ -382,13 +382,13 @@ const Breakfast = () => {
             {bfasttwo.map((bfastone, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-xl">{bfastone.header}</h2>
+                  <h2 className="text-3xl">{bfastone.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{bfastone.price}
                   </span>
                 </div>
                 <div>
-                  <p>{bfastone.body}</p>
+                  <p className="max-w-sm">{bfastone.body}</p>
                 </div>
               </div>
             ))}
@@ -398,13 +398,13 @@ const Breakfast = () => {
             {bsides.map((bsides, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-xl">{bsides.header}</h2>
+                  <h2 className="text-3xl max-w-sm">{bsides.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{bsides.price}
                   </span>
                 </div>
                 <div>
-                  <p>{bsides.body}</p>
+                  <p className="max-w-sm">{bsides.body}</p>
                 </div>
         
               </div>
@@ -416,13 +416,13 @@ const Breakfast = () => {
             {sdrinks.map((sdrinks, index) => (
               <div key={index} className="grid">
                 <div className="flex items-center ">
-                  <h2 className="text-xl">{sdrinks.header}</h2>
+                  <h2 className="text-3xl max-w-sm">{sdrinks.header}</h2>
                   <span className="flex items-center justify-center">
                     ............{sdrinks.price}
                   </span>
                 </div>
                 <div>
-                  <p>{sdrinks.body}</p>
+                  <p className="max-w-sm">{sdrinks.body}</p>
                 </div>
            
               </div>
