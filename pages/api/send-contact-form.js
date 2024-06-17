@@ -18,6 +18,7 @@ export default async (req, res) => {
   });
   const recipients = [
     process.env.RECIPIENT1,
+    process.env.RECIPIENT2,
   ];
   const mailData = {
     from: process.env.SMTP_USER,
