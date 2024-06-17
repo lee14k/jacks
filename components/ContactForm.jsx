@@ -44,9 +44,9 @@ export default function ContactForm() {
 
   return (
     <div className="relative bg-white">
-      <div className="lg:absolute lg:inset-0 lg:left-1/2">
+      <div className="">
         <img
-          className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
+          className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:h-full"
           src="/contactroll.jpg"
           alt=""
         />
@@ -158,10 +158,10 @@ export default function ContactForm() {
                   </div>
                 </div>
               </div>
-              <div className="mt-10 flex justify-end border-t border-gray-900/10 pt-8">
+              <div className="mt-10 flex justify-end border-t border-gray-900/10 pt-8 z-100">
                 <button
                   type="submit"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 z-100  pt-24"
                 >
                   Send message
                 </button>
