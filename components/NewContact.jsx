@@ -177,6 +177,23 @@ export default function NewContact() {
                             Send message
                           </button>
                         </div>
+                        {isModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center">
+                  <div className="modal-bg fixed inset-0 bg-black opacity-50"></div>
+                  <div className="modal-content bg-white p-4 rounded-lg shadow-lg z-50">
+                    <p className="text-lg font-semibold text-green-600">
+                      Submission Successful!
+                    </p>
+                    <p>Your submission was successful. Thank you!</p>
+                    <button
+                      onClick={closeModal}
+                      className="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              )}
                       </form>
                     </div>
                   </div>
