@@ -1,10 +1,6 @@
 import Image from "next/image";
-import { Rubik_Dirt } from "next/font/google";
 import Link from "next/link";
-const rubik = Rubik_Dirt({
-  weight: "400",
-  subsets: ["latin"],
-});
+
 import { Merriweather } from "next/font/google";
 
 const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });

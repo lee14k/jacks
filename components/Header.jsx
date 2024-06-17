@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import PrettyPhotoRow from "./PrettyPhotoRow";
-import { Rubik_Doodle_Shadow } from "next/font/google";
-const rubik = Rubik_Doodle_Shadow({ weight: "400", subsets: ["latin"] });
 import { Cedarville_Cursive } from "next/font/google";
 const cedar = Cedarville_Cursive({ weight: "400", subsets: ["latin"] });
 
