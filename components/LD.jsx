@@ -467,148 +467,183 @@ const LD = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center menucontainer">
-      <div className="mx-24 flex flex-col justify-center items-center">
-      <h1 className="text-6xl my-6">Lunch and Dinner</h1>
-      <span className="text-2xl my-6">Served after 11am</span>
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-6xl my-6">Appetizers</h2>
-        <div className="grid grid-cols-3 gap-8">
-          {lunch.map((item, index) => (
-            <div key={index} className="grid">
-              <div className="flex items-center ">
-                <h2 className="text-3xl">{item.header}</h2>............
-                <p>{item.price}</p>
-              </div>
-              <p className="mx-12">{item.body}</p>
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-6xl my-6">Hot Sandwiches</h1>
-          <span className="mx-12 text-xl my-2">
-            All sandwiches come with soup, salad, fries, or chippers.
-          </span>
-          <span className="mx-12 text-xl my-6">
-            Sweet potato waffle fries add 1.99 / Onion rings add 3.25 / Add
-            cheese 1.00
-          </span>
-          <div className="grid grid-cols-3 gap-8">
-            {hots.map((item, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  {" "}
-                  <h2 className="text-3xl">{item.header}</h2>{" "}
-                  <p>............{item.price}</p>
-                </div>
-                <p className="mx-12 text-center">{item.body}</p>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-6xl my-6">Cold Sandwiches</h1>
-            <div className="grid grid-cols-2 gap-12 gap-x-48">
-              {coldsams.map((item, index) => (
-                <div key={index} className="grid">
-                  <div className="flex items-center ">
-                    <h2 className="text-3xl">{item.header}</h2>
-                    <p> ............{item.price}</p>
+    <div className="min-h-screen bg-white">
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col space-y-12 menucontainer p-8 md:p-12">
+          <section className="space-y-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-900">Lunch and Dinner</h1>
+            <span className="text-xl md:text-2xl text-center text-gray-700 font-bold justify-center items-center">Served after 11am</span>
+
+            {/* Appetizers Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Appetizers</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {lunch.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
                   </div>
-                  <p className="mx-12 max-w-sm">{item.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <h1 className="text-6xl my-6">Burgers</h1>
-          <p className="mx-12 text-xl my-6">
-            {" "}
-            Burgers come with your choice of soup, salad, fries, or chippers.
-            Sweet potato waffle fries add 1.99 / Onion rings add 3.25 Add ons:
-            American, Swiss, Mozzarella, pepper jack, mushrooms, bbq sauce, or
-            jalapenos - 1.00 each portobello mushrooms, onion rings, onion
-            tanglers, bacon, smoked cheddar - 2.25 each extra burger patty or
-            brat patty 3.99 each
-          </p>
-          <div className="grid grid-cols-3 gap-8">
-            {burgers.map((item, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  {" "}
-                  <h2 className="text-3xl">{item.header}</h2>
-                  <p> ............{item.price}</p>
-                </div>
-                <p className="mx-12 max-w-sm">{item.body}</p>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <h2 className="text-6xl my-6">Wraps</h2>
+            </div>
 
-          <div className="grid grid-cols-3 gap-8">
-            {wraps.map((item, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  {" "}
-                  <h2 className="text-3xl">{item.header}</h2>
-                  <p>............{item.price}</p>
-                </div>
-                <p className="mx-12 max-w-sm">{item.body}</p>
+            {/* Hot Sandwiches Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Hot Sandwiches</h2>
+              <div className="text-center space-y-2">
+                <p className="text-lg text-gray-600">All sandwiches come with soup, salad, fries, or chippers.</p>
+                <p className="text-lg text-gray-600">Sweet potato waffle fries add 1.99 / Onion rings add 3.25 / Add cheese 1.00</p>
               </div>
-            ))}
-          </div>
-          <h2 className="text-6xl my-6">Salads</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {hots.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-          <div className="grid grid-cols-3 gap-8">
-            {salads.map((item, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  <h2 className="text-3xl">{item.header}</h2>
-                  <p>............{item.price}</p>
-                </div>
-                <p className="mx-12 max-w-sm">{item.body}</p>
+            {/* Cold Sandwiches Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Cold Sandwiches</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {coldsams.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-        <h1 className="text-6xl my-6">Jack's Classics</h1>
-        <p>
-          All Jack's Classics come with three sides, a homemade roll, and butter
-        </p>
-        <h2 className="text-3xl my-6">Jack's Side Choices:</h2>
-        <p className="text-xl">
-          Tossed salad - homemade salad of the day - mashed potatoes (with or
-          without gravy) - french fries - american fries - sweet potato waffle
-          fries (add 1.99) - potato chippers - backed potato - cup of soup -
-          veggie of the day - cottage cheese (add 1.99) - applesauce
-        </p>
-        <div className="grid grid-cols-3 gap-8">
-          {classics.map((item, index) => (
-            <div key={index} className="grid">
-              <div className="flex items-center ">
-                {" "}
-                <h2 className="text-3xl">{item.header}</h2>{" "}
-                <p>............{item.price}</p>
-              </div>
-              <p className="mx-12 max-w-sm">{item.body}</p>
             </div>
-          ))}
-        </div>
-        <h1 className="text-6xl my-6">Off The Hook</h1>
-        <p className="text-xl my-6">Includes three sides</p>
-        <div className="grid grid-cols-3 gap-8">
-          {hook.map((item, index) => (
-            <div key={index} className="grid">
-             <div className="flex items-center ">
-                {" "}
-                <h2 className="text-3xl">{item.header}</h2>{" "}
-                <p>............{item.price}</p>
+
+            {/* Burgers Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Burgers</h2>
+              <div className="text-center space-y-2">
+                <p className="text-lg text-gray-600">
+                  Burgers come with your choice of soup, salad, fries, or chippers.
+                  Sweet potato waffle fries add 1.99 / Onion rings add 3.25
+                </p>
+                <p className="text-lg text-gray-600">
+                  Add ons: American, Swiss, Mozzarella, pepper jack, mushrooms, bbq sauce, or jalapenos - 1.00 each
+                  portobello mushrooms, onion rings, onion tanglers, bacon, smoked cheddar - 2.25 each
+                  extra burger patty or brat patty 3.99 each
+                </p>
               </div>
-              <p>{item.body}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {burgers.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
+
+            {/* Wraps Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Wraps</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {wraps.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Salads Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Salads</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {salads.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Jack's Classics Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Jack's Classics</h2>
+              <div className="text-center space-y-4">
+                <p className="text-lg text-gray-600">All Jack's Classics come with three sides, a homemade roll, and butter</p>
+                <h3 className="text-xl font-semibold text-gray-800">Jack's Side Choices:</h3>
+                <p className="text-lg text-gray-600">
+                  Tossed salad - homemade salad of the day - mashed potatoes (with or without gravy) - french fries - american fries - 
+                  sweet potato waffle fries (add 1.99) - potato chippers - backed potato - cup of soup - veggie of the day - 
+                  cottage cheese (add 1.99) - applesauce
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {classics.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Off The Hook Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Off The Hook</h2>
+              <p className="text-lg text-center text-gray-600">Includes three sides</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {hook.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
       </div>
     </div>
   );

@@ -300,136 +300,145 @@ const Breakfast = () => {
     },
   ];
   return (
-    <div>
-    <div className="flex flex-col justify-center items-center mx-2 menucontainer">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-6xl my-6">Breakfast</h1>
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-6xl my-10">Breakfast Specials</h1>
+    <div className="min-h-screen bg-white">
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col space-y-12 menucontainer p-8 md:p-12">
+          {/* Breakfast Specials Section */}
+          <section className="space-y-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-900">Breakfast</h1>
+            <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Breakfast Specials</h2>
 
-          <div className="grid lg:grid-cols-3 custom-gap ">
-            {bfastone.map((bfastone, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  <h2 className="text-3xl">{bfastone.header}</h2>
-                  <span className="flex items-center justify-center">
-                    ............{bfastone.price}
-                  </span>
-                </div>
-                <div className="mr-12">
-                  <p className="max-w-sm">{bfastone.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-6xl my-10">Omelettes</h1>
-            <div className="grid grid-cols-3 gap-8">
-              {omelettes.map((omelettes, index) => (
-                <div key={index} className="grid">
-                  <div className="flex">
-                    <h2 className="text-3xl">{omelettes.header}</h2>
-                    <span className="flex items-center justify-center">
-                      ..............{omelettes.price}
-                    </span>
-                  </div>
-                  <div>
-                    <p className="max-w-sm">{omelettes.body}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {bfastone.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                      <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600">{item.body}</p>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
-          <div className="flex gap-2 mt-10">
-            <h1 className="text-4xl">Build your own omelette</h1>{" "}
-          </div>
-          <p className="text-xl">Starting with three eggs and our cheese blend.</p>
-          <span className="mb-10 text-2xl">$9.79</span>
+          </section>
 
-          <div className="grid grid-cols-3 gap-8">
-            {build.map((everyday, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  <h2 className="text-3xl">{everyday.header}</h2>
-               
+          {/* Omelettes Section */}
+          <section className="space-y-6">
+            <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Omelettes</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {omelettes.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                      <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="max-w-sm">{everyday.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <h1 className="text-6xl my-10">Everyday Favorites</h1>
+              ))}
+            </div>
+          </section>
 
-          <div className="grid grid-cols-3 gap-8">
-            {everyday.map((everyday, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  <h2 className="text-xl">{everyday.header}</h2>
-                  <span className="flex items-center justify-center">
-                    ............{everyday.price}
-                  </span>
-                </div>
-                <div>
-                  <p className="max-w-sm">{everyday.body}</p>
-                </div>
+          {/* Build Your Own Section */}
+          <section className="space-y-6">
+            <div className="text-center space-y-4">
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">Build your own omelette</h2>
+              <p className="text-lg text-gray-600">Starting with three eggs and our cheese blend.</p>
+              <span className="text-2xl font-bold text-gray-900">$9.79</span>
+            </div>
 
-              </div>
-            ))}
-          </div>
-          <h1 className="text-6xl my-10">Cakes and French Toasts</h1>
-          <div className="grid grid-cols-3 gap-8">
-            {bfasttwo.map((bfastone, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  <h2 className="text-3xl">{bfastone.header}</h2>
-                  <span className="flex items-center justify-center">
-                    ............{bfastone.price}
-                  </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {build.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col space-y-2">
+                    <h3 className="text-xl font-semibold text-gray-900">{item.header}</h3>
+                    <div className="text-sm md:text-base text-gray-600">
+                      {Array.isArray(item.body) ? (
+                        item.body.map((line, i) => <p key={i}>{line}</p>)
+                      ) : (
+                        <p>{item.body}</p>
+                      )}
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p className="max-w-sm">{bfastone.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <h1 className="text-6xl my-10">Sides</h1>
-          <div className="grid grid-cols-3 gap-8">
-            {bsides.map((bsides, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  <h2 className="text-3xl max-w-sm">{bsides.header}</h2>
-                  <span className="flex items-center justify-center">
-                    ............{bsides.price}
-                  </span>
-                </div>
-                <div>
-                  <p className="max-w-sm">{bsides.body}</p>
-                </div>
-        
-              </div>
-            ))}
-          </div>
-          <h2 className="text-6xl my-6">Drinks</h2>
+              ))}
+            </div>
+          </section>
 
-          <div className="grid grid-cols-3 gap-8">
-            {sdrinks.map((sdrinks, index) => (
-              <div key={index} className="grid">
-                <div className="flex items-center ">
-                  <h2 className="text-3xl max-w-sm">{sdrinks.header}</h2>
-                  <span className="flex items-center justify-center">
-                    ............{sdrinks.price}
-                  </span>
+          {/* Everyday Favorites Section */}
+          <section className="space-y-6">
+            <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Everyday Favorites</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {everyday.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-xl font-semibold text-gray-900">{item.header}</h3>
+                      <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="max-w-sm">{sdrinks.body}</p>
+              ))}
+            </div>
+          </section>
+
+          {/* Cakes and French Toasts Section */}
+          <section className="space-y-6">
+            <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Cakes and French Toasts</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {bfasttwo.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                      <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                  </div>
                 </div>
-           
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Sides Section */}
+          <section className="space-y-6">
+            <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Sides</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {bsides.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-xl font-semibold text-gray-900">{item.header}</h3>
+                      <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Drinks Section */}
+          <section className="space-y-6">
+            <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Drinks</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sdrinks.map((item, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                      <h3 className="text-xl font-semibold text-gray-900">{item.header}</h3>
+                      <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
-      </div>
       </div>
     </div>
   );

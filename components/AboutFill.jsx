@@ -277,48 +277,42 @@ export default function AboutFill() {
               <img
                 className="col-span-2 max-h-32 w-full object-contain lg:col-span-1"
                 src="/honorlogo.png"
-                alt="Transistor"
+                alt="UP Honor Flight Logo"
                 width={458}
                 height={128}
               />
               <img
                 className="col-span-2 max-h-32 w-full object-contain lg:col-span-1"
                 src="/rrlogo.png"
-                alt="Reform"
+                alt="Rapid River Schools Logo"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 max-h-32 w-full object-contain lg:col-span-1"
                 src="/fisherman.jpeg"
-                alt="Tuple"
+                alt="Bay Lakes Great Lakes Sports Fishermans Logo"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 max-h-32 w-full object-contain sm:col-start-2 lg:col-span-1"
                 src="/safeharbor.jpeg"
-                alt="SavvyCal"
+                alt="Tri County Safe Harbor Logo"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 col-start-2 max-h-32 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src="/bclogo.jpeg"
-                alt="Statamic"
+                alt="Bayside Community Logo"
                 width={158}
                 height={48}
               />
             </div>
           </div>
         </div>
-
-        {/* Team section */}
-
-        {/* Blog section */}
       </main>
-
-      {/* Footer */}
     </div>
     </div>
   );

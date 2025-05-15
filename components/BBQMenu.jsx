@@ -203,125 +203,149 @@ const BBQMenu = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center mx-2 menucontainer">
-      <div className="flex justify-center items-center flex-col">
-      <h1 className="text-6xl">BBQ </h1>
-      <h1 className="text-6xl my-10">Appetizers </h1>
-      
-      <div className="grid grid-cols-3 gap-8">
-        {bbqone.map((bbqone, index) => (
-          <div key={index} className="grid">
-            <div className="flex items-center ">
-              <h2 className="text-3xl">{bbqone.header}</h2>
-              <p> ............{bbqone.price}</p>
-            </div>
-            <div>
-              <p className="mx-12 max-w-sm">{bbqone.body}</p>
-            </div>
-            <div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div></div>
-      <h1 className="text-4xl mt-10">Fan Favorites</h1>
-      <div className="grid grid-cols-3 gap-8 pb-12">
-        {bbqtwo.map((bbqtwo, index) => (
-          <div key={index} className="grid">
-            <div className="flex items-center ">
-              <h2 className="text-3xl">{bbqtwo.header}</h2>
-              <p> ............{bbqtwo.price}</p>
-            </div>
-            <div>
-              <p className="mx-12 max-w-sm">{bbqtwo.body}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <h1 className="text-4xl mt-10">Burritos, Nachos, and Wraps</h1>
+    <div className="min-h-screen bg-white">
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col items-center space-y-12 menucontainer p-8 md:p-12">
+          <section className="flex flex-col items-center space-y-6 w-full">
+            <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-900">BBQ</h1>
+            <span className="text-xl md:text-2xl text-center text-gray-700 font-bold justify-center items-center">Served after 11am</span>
 
-      <div className="grid grid-cols-3 gap-8">
-        {bbqthree.map((bbqthree, index) => (
-          <div key={index} className="grid">
-            <div className="flex items-center ">
-              <h2 className="text-3xl">{bbqthree.header}</h2>
-              <p>............{bbqthree.price}</p>
+            {/* Appetizers Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Appetizers</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {bbqone.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div>
-              <p className="mx-12 max-w-sm">{bbqthree.body}</p>
-            </div>
-            <div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <h1 className="text-4xl mt-10">Burgers, Baskets, and Wraps</h1>
 
-      <div className="grid grid-cols-3 gap-8">
-        {bbqburgers.map((bbqburgers, index) => (
-          <div key={index} className="grid">
-            <div className="flex items-center ">
-              <h2 className="text-3xl">{bbqburgers.header}</h2>
-              <p>............{bbqburgers.price}</p>
+            {/* Fan Favorites Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Fan Favorites</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {bbqtwo.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div>
-              <p className="mx-12 max-w-sm">{bbqburgers.body}</p>
-            </div>
-            <div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <h1 className="text-4xl mt-10">Backwoods Sandwiches</h1>
 
-      <div className="grid grid-cols-3 gap-8">
-        {backwoods.map((backwoods, index) => (
-          <div key={index} className="grid">
-            <div className="flex items-center ">
-              <h2 className="text-3xl">{backwoods.header}</h2>
-              <p> ............{backwoods.price}</p>
+            {/* Burritos, Nachos, and Wraps Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Burritos, Nachos, and Wraps</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {bbqthree.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div>
-              <p className="mx-12 max-w-sm">{backwoods.body}</p>
-            </div>
-            <div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <h1 className="text-4xl mt-10">Feed the Pack</h1>
-      <p>
-        Choose from beef brisket, maple glazed pulled pork, BBQ pork ribs,
-        smoked chicken, honey smoked ham, smoked turkey, or burnt ends
-      </p>
-      <div className="grid grid-rows-3 ">
-        {pack.map((pack, index) => (
-          <div key={index} className="grid">
-            <div className="flex items-center ">
-              <h2 className="text-3xl">{pack.header}</h2>
-              <p>............{pack.price}</p>
-            </div>
-            <div>
-              <p className="mx-12 max-w-sm">{pack.body}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <h1 className="text-4xl mt-10">Desserts</h1>
 
-      {bbqdessert.map((bbqdessert, index) => (
-        <div key={index} className="grid">
-          <div className="flex items-center ">
-            <h2 className="text-3xl">{bbqdessert.header}</h2>
-            <p>............{bbqdessert.price}</p>
-          </div>
-          <div>
-            <p className="mx-12 max-w-sm">{bbqdessert.body}</p>
-          </div>
+            {/* Burgers, Baskets, and Wraps Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Burgers, Baskets, and Wraps</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {bbqburgers.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Backwoods Sandwiches Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Backwoods Sandwiches</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {backwoods.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Feed the Pack Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Feed the Pack</h2>
+              <div className="text-center space-y-4">
+                <p className="text-lg text-gray-600">
+                  Choose from beef brisket, maple glazed pulled pork, BBQ pork ribs,
+                  smoked chicken, honey smoked ham, smoked turkey, or burnt ends
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {pack.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Desserts Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-4xl font-semibold text-center text-gray-800">Desserts</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {bbqdessert.map((item, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{item.header}</h3>
+                        <span className="text-lg font-medium text-gray-700 mt-1 md:mt-0">{item.price}</span>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-600">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         </div>
-      ))}
-    </div>
+      </div>
     </div>
   );
 };
+
 export default BBQMenu;

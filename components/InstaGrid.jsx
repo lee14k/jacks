@@ -1,42 +1,61 @@
-import React, { useState, useEffect } from "react";
-
+import React from "react";
 const InstaGrid = () => {
-  const [media, setMedia] = useState([]);
-
-  useEffect(() => {
-    const fetchMedia = async () => {
-      try {
-        const response = await fetch("/api/images"); // Call to your Next.js API route
-        const data = await response.json();
-
-        if (!response.ok) {
-          console.error("API Error:", data.error);
-          return;
-        }
-
-        setMedia(data);
-      } catch (error) {
-        console.error("Error fetching Instagram media:", error);
-      }
-    };
-
-    fetchMedia(); // Call the function to fetch media
-  }, []); // Empty dependency array to run once on component mount
-
-  if (!media || media.length === 0) {
-    return <div>Loading...</div>;
-  }
-
+ const images = [
+    {
+      id: 1,
+      src: "/jacks-grid-1.jpg",
+      alt: "pancakes",
+    },
+    {
+      id: 2,
+      src: "/jacks-grid-2.jpg",
+      alt: "sandwich",
+    },
+    {
+      id: 3,
+      src: "/jacks-grid-3.jpg",
+      alt: "steak on the grill ",
+    },
+    {
+      id: 4,
+      src: "/jacks-grid-4.jpg",
+      alt: "m&m cookies",
+    },
+    {
+      id: 5,
+      src: "/jacks-grid-5.jpg",
+      alt: "loaves of bread ",
+    },
+    {
+      id: 6,
+      src: "/jacks-grid-6.jpg",
+      alt: "reuben sandwich on the grill",
+    },
+    {
+      id: 7,
+      src: "/jacks-grid-7.jpg",
+      alt: "customers enjoying a meal",
+    },
+    {
+      id: 8,
+      src: "/jacks-grid-8.jpg",
+      alt: "sunny side up eggs on the grill",
+    },
+    {
+      id: 9,
+      src: "/jacks-grid-9.jpg",
+      alt: "bbq hamburger and waffle fries",
+    },
+ ] 
   return (
     <div className="flex justify-center items-center bg-transparent">
       <div className="grid sm:grid-cols-3 my-16 w-3/4 gap-4 instacontainer">
-        {media.map((item) => (
-          // Update this div to use flex and center items
-          <div key={item.id} className="flex justify-center items-center">
+        {images.map((item) => (
+          <div key={item.id} className="flex justify-center items-center aspect-square rounded-xl overflow-hidden">
             <img
-              src={item.media_url}
-              alt={item.caption || "Instagram post"}
-              className=" max-w-full h-auto py-2 px-2"
+              src={item.src}
+              alt={item.alt}
+              className="w-full h-full object-cover"
             />
           </div>
         ))}
