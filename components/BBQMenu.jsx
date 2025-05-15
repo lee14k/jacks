@@ -208,7 +208,7 @@ const BBQMenu = () => {
         <div className="flex flex-col items-center space-y-12 menucontainer p-8 md:p-12">
           <section className="flex flex-col items-center space-y-6 w-full">
             <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-900">BBQ</h1>
-            <span className="text-xl md:text-2xl text-center text-gray-700 font-bold justify-center items-center">Served after 11am</span>
+            <span className="text-3xl text-center font-bold justify-center items-center">Served after 11am</span>
 
             {/* Appetizers Section */}
             <div className="space-y-6">
