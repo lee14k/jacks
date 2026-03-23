@@ -12,9 +12,6 @@ const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: false },
   { href: "/", current: false, img: "/newjacksb.png" },
-
-  { name: "Menu", href: "/menu", current: false },
-  { name: "Contact", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {
