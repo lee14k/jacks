@@ -26,9 +26,9 @@ const PhotoRow = () => {
           <h4 className={merriweather.className}>Lunch & Other Bites</h4>{" "}
         </div>
       </div>
-      <Link href="/menu">
+      <Link href="https://orders.cake.net/11333695">
       <button className="bg-emerald-950 px-12 py-2.5 text-4xl font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          View Menu
+          Order Now!
         </button>
       </Link>
     </div>

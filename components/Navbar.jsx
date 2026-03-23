@@ -10,8 +10,8 @@ const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 // Initial navigation array
 const navigation = [
   { name: "Home", href: "/", current: false },
-  { name: "About", href: "/about", current: false },
   { href: "/", current: false, img: "/newjacksb.png" },
+  { name: "About", href: "/about", current: false },
 ];
 
 function classNames(...classes) {
